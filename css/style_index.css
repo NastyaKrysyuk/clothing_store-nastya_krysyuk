@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;f;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /*____header___*/
@@ -82,6 +82,11 @@ span.material-icons {
   font-size: 0.7rem;
 }
 
+.header {
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+}
+
 /*________footer______*/
 .main_footer svg {
   vertical-align: middle;
@@ -91,7 +96,7 @@ span.material-icons {
 }
 
 li[class^="item_contacts"]{
-width: 30%;
+width: 32%;
 }
 
 .display_inline {
@@ -117,6 +122,7 @@ width: 30%;
    display: flex;
    flex-flow: row wrap;
    background-color: rgba(186, 194, 201, 0.664) ;
+   
    /* text-align: center; */
    font-size: 0.8em;
  }
@@ -127,7 +133,53 @@ width: 30%;
 .footer_consumer, .footer_navigation, .footer_newsletter {
   flex: 1 auto;
 }
-.footer_privacy {
+.footer_developer {
   font-size: 0.7em;
   text-align: center;
+  text-decoration:underline;
+  padding-bottom: 0.3em;
+}
+
+.footer_newsletter input {
+  border-width: 0 0 1px;
+  border-color: gray;
+  width: 80%;
+  background-color: inherit;
+  padding-bottom :0.7em;
+  font-size: 1rem;
+}
+
+.footer_newsletter input:focus {
+  outline-style: none;
+}
+.newsletter-btn {
+  display: inline-block;
+  position: absolute;
+}
+.arrow-right::before {
+  content: "\232A";
+  font-size: 1.2em;
+  color: gray;
+}
+
+
+/*____menu_clothes*/
+.menu_clothes {
+  display: none;
+  position:absolute;
+}
+
+li.item_clothes:hover .menu_clothes,
+li.item_bags:hover .menu_clothes {
+  display: block;
+  background-color: rgb(239,219,170,0.75);
+  width: 100%;
+  height: max-content;
+}
+
+.menu_clothes li {
+  display: block;
+  margin: 0.5em;
+  border:none;
+  padding: 0.5em;
 }
