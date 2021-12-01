@@ -4,12 +4,16 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+body {
+  background: url(DSCF4626-2.JPG) center center no-repeat;
+  background-size: cover;
+}
 
 /*____header___*/
 .main_header {
   width: 100%;
   height: max-content;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 7px 9px 13px -7px #00000024, 5px 5px 15px 5px rgb(0 0 0 / 0%);
   position: fixed;
   top: 0;
@@ -121,7 +125,7 @@ width: 32%;
 .footer_wrapper {
    display: flex;
    flex-flow: row wrap;
-   background-color: rgba(186, 194, 201, 0.664) ;
+   background-color: rgba(255, 255, 255, 0.664) ;
    
    /* text-align: center; */
    font-size: 0.8em;
@@ -182,4 +186,16 @@ li.item_bags:hover .menu_clothes {
   margin: 0.5em;
   border:none;
   padding: 0.5em;
+}
+
+
+/*____MAIN_____*/
+
+.main_wrapper { 
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 98%;
+  margin: auto;
+  margin-top: 6em;
+
 }
