@@ -199,3 +199,43 @@ li.item_bags:hover .menu_clothes {
   margin-top: 6em;
 
 }
+
+.img_sport_cost {
+  width: 80%;
+  height: 566px;
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+  
+}
+.top_block_main,
+.bottom_block_main {
+text-align: center;
+margin-top: 5em;
+}
+
+ .img_main {
+   transition: 1s;
+ }
+ .img_main:hover {
+  transform: scale(0.95);
+  opacity: 0.8;
+ }
+ .bottom_block_main {
+ margin-top: 0.3em; 
+}
+ main a {
+   text-decoration: none;
+ }
+.product {
+  position:absolute;
+  left: 30%;
+  bottom: 5%;
+  /* z-index: -2; */
+  /* display: none; */
+}
+
+/* .img_main:hover .product {
+  display: block;
+  z-index:100;
+} */
