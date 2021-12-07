@@ -76,7 +76,7 @@ a {
   text-align: right;
 }
 
-span.material-icons {
+.material-icons {
   vertical-align: middle;
   margin-left:1rem ;
   color:rgba(128, 128, 128, 0.479);
@@ -234,7 +234,7 @@ margin-top: 5em;
 .main_wrapper {
   width: max-content;
   margin: auto;
-  transform: scale(0.9);
+  transform: scale(0.92);
 }
 div[class^="img"] {
   margin: 0.5em;
@@ -289,3 +289,32 @@ div[class^="img"]:hover{
   transform: scale(0.95);
 }
 
+#myVideo {
+  right: 0;
+  bottom: 0;
+  height: 869px;
+  opacity: 0.7;
+  position: relative;
+}
+ 
+.wrapper_video {
+  position: relative;
+}
+
+.text-over-video {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  width: max-content;
+  margin:auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  line-height: 1.5em;
+  z-index: 10;
+}
+.upper {
+  text-transform: uppercase;
+}
