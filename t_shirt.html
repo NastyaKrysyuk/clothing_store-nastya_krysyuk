@@ -5,16 +5,16 @@
   <meta charset="UTF-8">
   <title>KOMBINACJA</title>
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="./css/style_index.css">
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/style_clothes.css">
+  <link rel="stylesheet" href="./css/style_price_card.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=M+PLUS+1:wght@200&family=Montserrat:wght@300&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Shippori+Antique+B1&family=Source+Sans+Pro&display=swap"
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=M+PLUS+1:wght@200&family=Montserrat:wght@300&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Roboto:wght@300&family=Shippori+Antique+B1&family=Source+Sans+Pro&display=swap" 
     rel="stylesheet">
-
 </head>
-
 <body>
   <header class="main_header" id="main_header">
     <div class="main_logo">
@@ -27,7 +27,7 @@
         <li class="item_clothes"><a href="">Одежда</a>
           <ul class="menu_clothes">
             <div class="auto">
-            <li ><a href="./t_shirt.html">Футболки/Лонгсливы</a></li>
+            <li ><a href="">Футболки/Лонгсливы</a></li>
             <li ><a href="">Рубашки</a></li>
             <li ><a href="">Платья</a></li>
             <li ><a href="">Спортивные костюмы</a></li>
@@ -63,49 +63,108 @@
       </ul>
     </nav>
   </header>
-  <main class="main_wrapper">
-    <div class="wrapper_video">
-    <video autoplay muted loop id="myVideo">
-      <source src="./images/IMG_0077 (1).mp4" type="video/mp4">
-    </video>
-    <div class="text-over-video">
-      <span class="upper">kombinacja store</span> <br>
-      limited colection <br>
-      unisex | w&m <br>
-      доставка по миру<img class="material-icons"  src="./images/outline_language_white_24dp.png">
-    </div>
-  </div>
-    <div class="main_top_block">
-       <a href="">
-         <div class="img_bluza main_img ">
-           <p>Рубашки</p>
-         </div>
-       </a>
-       <a href="">
-        <div class="img_bag main_img ">
-          <p>Сумки</p>
+  <main>
+    <aside class="nav_left_block" >
+      <ul class="nav_aside_clothes">
+        <li class="nav_aside_clothes_main_item">Одежда</li>
+        <li class="selected"><a href="">Футболки/Лонгсливы</a></li>
+        <li ><a href="">Рубашки</a></li>
+        <li ><a href="">Платья</a></li>
+        <li ><a href="">Спортивные костюмы</a></li>
+      </ul>
+    </aside>
+    <section class="category__wrapper">
+      <article class="product_card">
+        <img src="./images/img_clothes/top1.jpg">
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div>         
+          <input id="toggle-heart" type="checkbox" />
+          <label for="toggle-heart" aria-label="like"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+              viewBox="0 0 24 24" width="24px" fill="#000000">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg></label>
         </div>
-      </a>
-    </div>
-    <div class="main_centre_block">
-      <a>
-        <div class="img_sport_suit">
-          <p>Костюмы | unisex</p>
+      </article>
+      <article class="product_card">
+        <img src="./images/img_clothes/top2.jpg">
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div>         
+          <input id="toggle-heart1" type="checkbox" />
+          <label for="toggle-heart1" aria-label="like"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+              viewBox="0 0 24 24" width="24px" fill="#000000">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg></label>
         </div>
-      </a>
-    </div>
-    <div class="main_bottom_block">
-      <a href="">
-        <div class="img_futbolka main_img ">
-          <p>Футболки</p>
+      </article>
+      <article class="product_card">
+        <img src="./images/img_clothes/top3.jpg">
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div>         
+          <input id="toggle-heart" type="checkbox" />
+          <label for="toggle-heart" aria-label="like"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+              viewBox="0 0 24 24" width="24px" fill="#000000">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg></label>
         </div>
-      </a>
-      <a href="">
-       <div class="img_dress main_img ">
-        <p>Платья</p>
-       </div>
-     </a>
-    </div>
+      </article>
+      <article class="product_card">
+        <img src="./images/img_clothes/top4.jpg">
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div>         
+          <input id="toggle-heart1" type="checkbox" />
+          <label for="toggle-heart1" aria-label="like"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+              viewBox="0 0 24 24" width="24px" fill="#000000">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg></label>
+        </div>
+      </article>
+      <article class="product_card">
+        <img src="./images/img_clothes/top5.jpg">
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div>         
+          <input id="toggle-heart1" type="checkbox" />
+          <label for="toggle-heart1" aria-label="like"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+              viewBox="0 0 24 24" width="24px" fill="#000000">
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path
+                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+            </svg></label>
+        </div>
+      </article>
+    </section>
   </main>
   <footer class="main_footer">
     <div class="footer_wrapper">
@@ -203,6 +262,7 @@
     </div>
 
   </footer>
+
 </body>
 
 </html>
