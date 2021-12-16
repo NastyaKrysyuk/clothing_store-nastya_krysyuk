@@ -7,11 +7,11 @@ main {
   color: black;
   margin-right: 2em;
   position: relative;
-  width: 15%;
+  width: 30%;
   padding-top: 4em;
 }
 
-.nav_aside_clothes li a {
+.tablinks {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
@@ -19,7 +19,9 @@ main {
   color: rgb(0, 0, 0);
   letter-spacing: 0.04rem;
   line-height: 3em;
+  cursor: pointer;
 }
+
 
 .nav_aside_clothes_main_item {
   /* font-weight: bold; */
@@ -29,10 +31,6 @@ main {
   text-transform: uppercase;
 }
 
-.selected {
+.nav_aside_clothes li.active {
   text-decoration: underline;
-}
-
-.category__wrapper {
-
 }

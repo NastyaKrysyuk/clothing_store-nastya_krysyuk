@@ -16,7 +16,21 @@
   margin-top: 0.3em;
 }
 
-input[type="checkbox"] {
+.toggle-heart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  color: aliceblue;
+}
+.class1 {
+  position: absolute;
+  right: 0 ;
+  bottom: 0 ;
+  cursor: pointer;
+  
+}
+/* input[type="checkbox"] {
   display: none;
 }
 
@@ -30,7 +44,7 @@ label[for] {
 input[id]:checked~label[for] svg {
   fill: rgb(184, 89, 89);
 
-}
+} */
 
 .product_card__container {
   position: relative;
@@ -66,13 +80,4 @@ input[id]:checked~label[for] svg {
   background-color: rgba(255, 255, 255, 0.616);
   font-weight: bold;
   cursor: pointer;
-}
-
-.list-size__link {
-  color: rgb(0, 0, 0);
-}
-
-:target {
-  
-  border: 1px solid black;
 }

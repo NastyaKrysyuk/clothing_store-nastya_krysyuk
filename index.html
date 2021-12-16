@@ -16,6 +16,14 @@
 </head>
 
 <body>
+  <script src="index.js"></script>
+  <div id="overlay-block" class="search_overlay-block" >
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <div class="overlay-content">
+
+    </div>
+  </div>
+  
   <header class="main_header" id="main_header">
     <div class="main_logo">
       <a href="index.html">
@@ -27,7 +35,7 @@
         <li class="item_clothes"><a href="">Одежда</a>
           <ul class="menu_clothes">
             <div class="auto">
-            <li ><a href="./t_shirt.html">Футболки/Лонгсливы</a></li>
+            <li ><a href="./clothes.html">Футболки/Лонгсливы</a></li>
             <li ><a href="">Рубашки</a></li>
             <li ><a href="">Платья</a></li>
             <li ><a href="">Спортивные костюмы</a></li>
@@ -52,17 +60,22 @@
     </nav>
     <nav class="main_nav_toolbar">
       <ul>
-        <li class="icon_search">
-          <span class="material-icons">search</span>
-          <a href="">Поиск</a>
+        <li class="icon_search" onclick="openNav()">
+         <span class="material-icons">search</span>
+          Поиск
         </li>
         <li class="icon_bag">
           <span class="material-icons">shopping_bag</span>
-          <a href="">Корзина</a>
+          Корзина
         </li>
       </ul>
     </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar">
+       </div>
+    </div>
   </header>
+
   <main class="main_wrapper">
     <div class="wrapper_video">
     <video autoplay muted loop id="myVideo">
@@ -76,11 +89,11 @@
     </div>
   </div>
     <div class="main_top_block">
-       <a href="">
-         <div class="img_bluza main_img ">
-           <p>Рубашки</p>
-         </div>
-       </a>
+      <a href="">
+        <div class="img_dress main_img ">
+         <p>Платья</p>
+        </div>
+      </a>
        <a href="">
         <div class="img_bag main_img ">
           <p>Сумки</p>
@@ -101,10 +114,10 @@
         </div>
       </a>
       <a href="">
-       <div class="img_dress main_img ">
-        <p>Платья</p>
-       </div>
-     </a>
+        <div class="img_bluza main_img ">
+          <p>Рубашки</p>
+        </div>
+      </a>
     </div>
   </main>
   <footer class="main_footer">
