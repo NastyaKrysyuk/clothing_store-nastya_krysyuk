@@ -17,10 +17,47 @@
 
 <body>
   <script src="index.js"></script>
-  <div id="overlay-block" class="search_overlay-block" >
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <div class="overlay-content">
+  <script src="clothes.js"></script>
+  <div id="search_overlay-block" class="search_overlay-block" >
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">×</a>
+    <div class="search_overlay-content">
+      <div class="footer_newsletter">
+        <input class="search_input" type="search" placeholder="Введите поисковой запрос">
+      </div>
 
+    </div>
+  </div>
+  <div id="bag_overlay-block" class="bag_overlay-block" >
+    <a href="javascript:void(0)" class="closebtn" onclick="closeBag()">×</a>
+    <div class="bag_overlay-content">
+        <ul class="list_bag">
+          <li class="tablinks" onclick="openContent(event, 'bag')">
+            <span class="material-icons">
+              shopping_bag
+            </span>
+            Моя корзина(0)
+          </li>
+          <li class="tablinks" onclick="openContent(event, 'favorite')">
+            <span class="material-icons ">
+              favorite
+            </span>
+             Избранное(0)
+            </li>
+        </ul>
+        <div id="bag" class="tabcontent" id="defaultOpen">
+          <div class="content">
+                <span class="bold">Корзина пустая.</span> <br>Чтобы добавить в корзину 
+          понравившийся товар, нажмите <br>
+          «Добавить в корзину».
+          </div>
+        </div>
+        <div id="favorite" class="tabcontent">
+          <div class="content">
+            <span class="bold">У вас еще нет сохраненных товаров!</span> 
+            Проверьте, нет ли у вас товаров в корзине.
+             Купите их, пока они не закончились!
+      </div>
+    </div>
     </div>
   </div>
   
@@ -60,11 +97,11 @@
     </nav>
     <nav class="main_nav_toolbar">
       <ul>
-        <li class="icon_search" onclick="openNav()">
+        <li class="icon_search" onclick="openSearch()">
          <span class="material-icons">search</span>
           Поиск
         </li>
-        <li class="icon_bag">
+        <li class="icon_bag" onclick="openBag()">
           <span class="material-icons">shopping_bag</span>
           Корзина
         </li>
@@ -87,6 +124,7 @@
       unisex | w&m <br>
       доставка по миру<img class="material-icons"  src="./images/outline_language_white_24dp.png">
     </div>
+    
   </div>
     <div class="main_top_block">
       <a href="">

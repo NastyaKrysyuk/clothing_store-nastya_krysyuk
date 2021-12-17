@@ -11,6 +11,9 @@ body {
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 /*____header___*/
 .main_header {
   width: 100%;
@@ -72,7 +75,7 @@ a {
 .main_nav_items a:hover,
 .main_nav_toolbar a:hover {
   font-weight: bold;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.06rem;
   transition-delay: 0s;
 }
 
@@ -213,40 +216,6 @@ li.item_bags:hover .menu_clothes {
 
 /*____MAIN_____*/
 
-
-
-/* .img_sport_cost {
-  width: 80%;
-  height: 566px;
-  margin-left: auto;
-    margin-right: auto;
-    display: block;
-  
-}
-.top_block_main,
-.bottom_block_main {
-text-align: center;
-margin-top: 5em;
-}
-
- .img_main {
-   transition: 1s;
- }
- .img_main:hover {
-  transform: scale(0.95);
-  opacity: 0.8;
- }
- .bottom_block_main {
- margin-top: 0.3em; 
-}
- main a {
-   text-decoration: none;
- }
-.product {
-  position:absolute;
-  left: 30%;
-  bottom: 5%;
-} */
 .main_wrapper {
   width: max-content;
   margin: auto;
@@ -344,6 +313,10 @@ div[class^="img"]:hover{
 
 /*____search-block____*/
 
+.search_input {
+  color: #f1f1f1;
+}
+
 .search_overlay-block {
   height: 0%;
   width: 100%;
@@ -351,12 +324,12 @@ div[class^="img"]:hover{
   z-index: 5;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.753);
+  background-color: rgba(0, 0, 0, 0.76);
   overflow-y: hidden;
   transition: 0.5s;
 }
 
-.overlay-content {
+.search_overlay-content {
   position: relative;
   top: 25%;
   width: 100%;
@@ -391,4 +364,81 @@ div[class^="img"]:hover{
     top: 15px;
     right: 35px;
   }
+}
+
+
+
+/*____bag_block___*/
+
+.bag_overlay-block {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.76);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.bag_overlay-block a {
+  text-decoration: none;
+  font-size: 2em;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.bag_overlay-block a:hover {
+  color: #f1f1f1;
+}
+
+.bag_overlay-block .closebtn {
+  position: absolute;
+  top: 0;
+ left: 0;
+  font-size: 3em;
+  margin-left: 0.5em;
+}
+
+@media screen and (max-height: 450px) {
+.bag_overlay-block {padding-top: 15px;}
+.bag_overlay-block a {font-size: 18px;}
+}
+
+
+.tablinks {
+  display: inline-block;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-size: 1rem;
+  /* margin: 0 1rem; */
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.04rem;
+  line-height: 3em;
+  cursor: pointer;
+  padding:  0.8em ;
+}
+.tablinks.active {
+  /* text-decoration: underline; */
+  border-bottom: 0.016em solid white;
+}
+.tabcontent {
+  color: #ffffff;
+  display:none;
+  text-align: -webkit-center;
+}
+.content {
+  text-align: center;
+  width: 200px;
+  margin-top: 6em;
+}
+
+.bold {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 1em;
 }

@@ -7,10 +7,17 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-function openNav() {
-  document.getElementById("overlay-block").style.height = "100%";
+function openSearch() {
+  document.getElementById("search_overlay-block").style.height = "100%";
 }
 
-function closeNav() {
-  document.getElementById("overlay-block").style.height = "0%";
+function closeSearch() {
+  document.getElementById("search_overlay-block").style.height = "0%";
+}
+function openBag() {
+  document.getElementById("bag_overlay-block").style.width = "max-content";
+}
+
+function closeBag() {
+  document.getElementById("bag_overlay-block").style.width = "0";
 }
