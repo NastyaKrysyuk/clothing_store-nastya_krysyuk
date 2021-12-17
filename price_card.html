@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>KOMBINACJA</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/style_clothes.css">
+  <link rel="stylesheet" href="./css/style_price_card.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=M+PLUS+1:wght@200&family=Montserrat:wght@300&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Shippori+Antique+B1&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=M+PLUS+1:wght@200&family=Montserrat:wght@300&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Roboto:wght@300&family=Shippori+Antique+B1&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <script src="clothes.js"></script>
+  <main>
+    
+    <section class="category__wrapper">
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div>
+          <span class="material-icons " onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>

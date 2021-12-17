@@ -1,0 +1,83 @@
+.product_card {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.7em;
+  display: inline-block;
+  margin: 0 1.5em 1em 0;
+}
+
+.product_card-content {
+  position: relative;
+  margin: 0.5em;
+}
+
+.product_card-price {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-top: 0.3em;
+}
+
+.toggle-heart {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  color: aliceblue;
+}
+.class1 {
+  position: absolute;
+  right: 0 ;
+  bottom: 0 ;
+  cursor: pointer;
+  
+}
+/* input[type="checkbox"] {
+  display: none;
+}
+
+label[for] {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+input[id]:checked~label[for] svg {
+  fill: rgb(184, 89, 89);
+
+} */
+
+.product_card__container {
+  position: relative;
+}
+
+.overlay-block {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  width: 100%;
+  transition: 0.5s ease;
+  background-color: rgba(128, 128, 128, 0.664);
+  text-align: center;
+}
+
+.product_card__container:hover .overlay-block {
+  opacity: 1;
+}
+
+.button-add_into_bag {
+  position: relative;
+  padding: 0.5em;
+  top: 50%;
+  cursor: pointer;
+}
+
+.list-size__item {
+  display: inline-block;
+  margin-right: 1em;
+  width: 3em;
+  background-color: rgba(255, 255, 255, 0.616);
+  font-weight: bold;
+  cursor: pointer;
+}

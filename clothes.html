@@ -5,62 +5,18 @@
   <meta charset="UTF-8">
   <title>KOMBINACJA</title>
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="stylesheet" href="./css/style_index.css">
+  <link rel="stylesheet" href="./css/shared.css">
+  <link rel="stylesheet" href="./css/style_clothes.css">
+  <link rel="stylesheet" href="./css/style_price_card.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=M+PLUS+1:wght@200&family=Montserrat:wght@300&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Shippori+Antique+B1&family=Source+Sans+Pro&display=swap"
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=M+PLUS+1:wght@200&family=Montserrat:wght@300&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Roboto:wght@300&family=Shippori+Antique+B1&family=Source+Sans+Pro&display=swap" 
     rel="stylesheet">
-
 </head>
-
 <body>
-  <script src="index.js"></script>
   <script src="clothes.js"></script>
-  <div id="search_overlay-block" class="search_overlay-block" >
-    <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">×</a>
-    <div class="search_overlay-content">
-      <div class="footer_newsletter">
-        <input class="search_input" type="search" placeholder="Введите поисковой запрос">
-      </div>
-
-    </div>
-  </div>
-  <div id="bag_overlay-block" class="bag_overlay-block" >
-    <a href="javascript:void(0)" class="closebtn" onclick="closeBag()">×</a>
-    <div class="bag_overlay-content">
-        <ul class="list_bag">
-          <li class="tablinks" onclick="openContent(event, 'bag')">
-            <span class="material-icons">
-              shopping_bag
-            </span>
-            Моя корзина(0)
-          </li>
-          <li class="tablinks" onclick="openContent(event, 'favorite')">
-            <span class="material-icons ">
-              favorite
-            </span>
-             Избранное(0)
-            </li>
-        </ul>
-        <div id="bag" class="tabcontent" id="defaultOpen">
-          <div class="content">
-                <span class="bold">Корзина пустая.</span> <br>Чтобы добавить в корзину 
-          понравившийся товар, нажмите <br>
-          «Добавить в корзину».
-          </div>
-        </div>
-        <div id="favorite" class="tabcontent">
-          <div class="content">
-            <span class="bold">У вас еще нет сохраненных товаров!</span> 
-            Проверьте, нет ли у вас товаров в корзине.
-             Купите их, пока они не закончились!
-      </div>
-    </div>
-    </div>
-  </div>
-  
   <header class="main_header" id="main_header">
     <div class="main_logo">
       <a href="index.html">
@@ -72,7 +28,7 @@
         <li class="item_clothes"><a href="">Одежда</a>
           <ul class="menu_clothes">
             <div class="auto">
-            <li ><a href="./clothes.html">Футболки/Лонгсливы</a></li>
+            <li ><a href="">Футболки/Лонгсливы</a></li>
             <li ><a href="">Рубашки</a></li>
             <li ><a href="">Платья</a></li>
             <li ><a href="">Спортивные костюмы</a></li>
@@ -97,66 +53,270 @@
     </nav>
     <nav class="main_nav_toolbar">
       <ul>
-        <li class="icon_search" onclick="openSearch()">
-         <span class="material-icons">search</span>
-          Поиск
+        <li class="icon_search">
+          <span class="material-icons">search</span>
+          <a href="">Поиск</a>
         </li>
-        <li class="icon_bag" onclick="openBag()">
+        <li class="icon_bag">
           <span class="material-icons">shopping_bag</span>
-          Корзина
+          <a href="">Корзина</a>
         </li>
       </ul>
     </nav>
-    <div class="progress-container">
-      <div class="progress-bar" id="myBar">
-       </div>
-    </div>
   </header>
+  <main class="main_clothes">
+    <aside class="nav_left_block" >
+      <ul class="nav_aside_clothes">
+        <li class="nav_aside_clothes_main_item">Одежда</li>
+        <li class="tablinks" onclick="openContent(event, 't-shirt')" id="defaultOpen" >Футболки/Лонгсливы</li>
+        <li class="tablinks" onclick="openContent(event, 'shirts')">Рубашки</li>
+        <li class="tablinks" onclick="openContent(event, 'dress')" >Платья</li>
+        <li class="tablinks" onclick="openContent(event, 'costumes')">Спортивные костюмы</li>
+      </ul>
+    </aside>
+    <section class="category__wrapper">
+      <div id="t-shirt" class="tabcontent">
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div> 
+          <span class="material-icons" onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+    </div>
+    <div id="shirts" class="tabcontent">
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div> 
+          <span class="material-icons" onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div> 
+          <span class="material-icons" onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+    </div>
+    <div id="dress" class="tabcontent">
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div> 
+          <span class="material-icons" onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div> 
+          <span class="material-icons" onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div> 
+          <span class="material-icons" onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+    </div>
+    <div id="costumes" class="tabcontent">
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div> 
+          <span class="material-icons" onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div> 
+          <span class="material-icons" onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div> 
+          <span class="material-icons" onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+      <article class="product_card">
+        <div class="product_card__container">
+          <img src="./images/img_clothes/top3.jpg">
+        <div class="overlay-block">
+          <button class="button-add_into_bag">Добавить в корзину</button>
+          <ul class="list-size">
+            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+          </ul>
+        </div>
+      </div>        
+        <div class="product_card-content">
+          <div class="product_card-name">
+            <p>Укороченная футболка</p>
+          </div>
+          <div class="product_card-price">
+            BYR 50
+          </div> 
+          <span class="material-icons" onclick="return ChangeColor(this);">
+            favorite
+            </span> 
+        </div>
+      </article>
+    </div>
 
-  <main class="main_wrapper">
-    <div class="wrapper_video">
-    <video autoplay muted loop id="myVideo">
-      <source src="./images/IMG_0077 (1).mp4" type="video/mp4">
-    </video>
-    <div class="text-over-video">
-      <span class="upper">kombinacja store</span> <br>
-      limited colection <br>
-      unisex | w&m <br>
-      доставка по миру<img class="material-icons"  src="./images/outline_language_white_24dp.png">
-    </div>
-    
-  </div>
-    <div class="main_top_block">
-      <a href="">
-        <div class="img_dress main_img ">
-         <p>Платья</p>
-        </div>
-      </a>
-       <a href="">
-        <div class="img_bag main_img ">
-          <p>Сумки</p>
-        </div>
-      </a>
-    </div>
-    <div class="main_centre_block">
-      <a>
-        <div class="img_sport_suit">
-          <p>Костюмы | unisex</p>
-        </div>
-      </a>
-    </div>
-    <div class="main_bottom_block">
-      <a href="">
-        <div class="img_futbolka main_img ">
-          <p>Футболки</p>
-        </div>
-      </a>
-      <a href="">
-        <div class="img_bluza main_img ">
-          <p>Рубашки</p>
-        </div>
-      </a>
-    </div>
+      </section>
+             
+      
   </main>
   <footer class="main_footer">
     <div class="footer_wrapper">
@@ -254,6 +414,7 @@
     </div>
 
   </footer>
+
 </body>
 
 </html>
