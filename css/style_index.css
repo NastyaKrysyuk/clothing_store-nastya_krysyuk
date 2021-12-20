@@ -7,6 +7,7 @@
 body {
   background: url(DSCF4626-2.JPG) center center no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 a {
   text-decoration: none;

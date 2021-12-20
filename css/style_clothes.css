@@ -3,12 +3,14 @@
   margin: 5em 0 0 1em;
 }
 .nav_left_block {
+  min-width: max-content;
+  max-width: max-content;
   background-color: rgb(239,219,170,0.75) ;
   color: black;
   margin-right: 2em;
   position: relative;
   /* width: 30%; */
-  flex-basis: 60%;
+  /* flex-basis: 60%; */
   padding-top: 4em;
 }
 

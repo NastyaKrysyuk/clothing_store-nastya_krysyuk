@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="./css/shared.css">
   <link rel="stylesheet" href="./css/style_clothes.css">
+  <!-- <link rel="stylesheet" href="./css/style_index.css"> -->
   <link rel="stylesheet" href="./css/style_price_card.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link
@@ -18,7 +19,51 @@
 </head>
 
 <body>
+  <script src="index.js"></script>
   <script src="clothes.js"></script>
+  <div id="search_overlay-block" class="search_overlay-block" >
+    <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">×</a>
+    <div class="search_overlay-content">
+      <div class="footer_newsletter">
+        <input class="search_input" type="search" placeholder="Введите поисковой запрос">
+      </div>
+
+    </div>
+  </div>
+  <div id="bag_overlay-block" class="bag_overlay-block" >
+    <a href="javascript:void(0)" class="closebtn" onclick="closeBag()">×</a>
+    <div class="bag_overlay-content">
+        <ul class="list_bag">
+          <li class="tablinks" onclick="openContent(event, 'bag')">
+            <span class="material-icons">
+              shopping_bag
+            </span>
+            Моя корзина(0)
+          </li>
+          <li class="tablinks" onclick="openContent(event, 'favorite')">
+            <span class="material-icons ">
+              favorite
+            </span>
+             Избранное(0)
+            </li>
+        </ul>
+        <div id="bag" class="tabcontent" id="defaultOpen">
+          <div class="content">
+                <span class="bold">Корзина пустая.</span> <br>Чтобы добавить в корзину 
+          понравившийся товар, нажмите <br>
+          «Добавить в корзину».
+          </div>
+        </div>
+        <div id="favorite" class="tabcontent">
+          <div class="content">
+            <span class="bold">У вас еще нет сохраненных товаров!</span> 
+            Проверьте, нет ли у вас товаров в корзине.
+             Купите их, пока они не закончились!
+      </div>
+    </div>
+    </div>
+  </div>
+  
   <header class="main_header" id="main_header">
     <div class="main_logo">
       <a href="index.html">
@@ -30,22 +75,22 @@
         <li class="item_clothes"><a href="">Одежда</a>
           <ul class="menu_clothes">
             <div class="auto">
-              <li><a href="">Футболки/Лонгсливы</a></li>
-              <li><a href="">Рубашки</a></li>
-              <li><a href="">Платья</a></li>
-              <li><a href="">Спортивные костюмы</a></li>
-            </div>
+            <li ><a href="./clothes.html">Футболки/Лонгсливы</a></li>
+            <li ><a href="">Рубашки</a></li>
+            <li ><a href="">Платья</a></li>
+            <li ><a href="">Спортивные костюмы</a></li>
+          </div>
             <li class="menu_img_bags"><img src="./images/clothes.jpg"></li>
           </ul>
         </li>
         <li class="item_bags"><a href="">Сумки</a>
           <ul class="menu_clothes">
-            <div class="auto">
-              <li><a href="">Шопперы</a></li>
-              <li><a href="">Поясные</a></li>
-              <li><a href="">Для ноутбука</a></li>
-            </div>
-            <li class="menu_img_bags"><img src="./images/bags.jpg"></li>
+          <div class="auto">
+            <li><a href="">Шопперы</a></li>
+            <li><a href="">Поясные</a></li>
+            <li><a href="">Для ноутбука</a></li>
+          </div>
+            <li class="menu_img_bags"><img src="./images/bags.jpg"></li>         
           </ul>
         </li>
         <li><a href="">Подарочная карта</a></li>
@@ -55,16 +100,20 @@
     </nav>
     <nav class="main_nav_toolbar">
       <ul>
-        <li class="icon_search">
-          <span class="material-icons">search</span>
-          <a href="">Поиск</a>
+        <li class="icon_search" onclick="openSearch()">
+         <span class="material-icons">search</span>
+          Поиск
         </li>
-        <li class="icon_bag">
+        <li class="icon_bag" onclick="openBag()">
           <span class="material-icons">shopping_bag</span>
-          <a href="">Корзина</a>
+          Корзина
         </li>
       </ul>
     </nav>
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar">
+       </div>
+    </div>
   </header>
   <main class="main_clothes">
     <aside class="nav_left_block">
