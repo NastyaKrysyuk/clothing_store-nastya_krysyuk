@@ -12,9 +12,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=M+PLUS+1:wght@200&family=Montserrat:wght@300&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Shippori+Antique+B1&family=Source+Sans+Pro&display=swap"
     rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=M+PLUS+1:wght@200&family=Montserrat:wght@300&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Roboto:wght@300&family=Shippori+Antique+B1&family=Source+Sans+Pro&display=swap" 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=M+PLUS+1:wght@200&family=Montserrat:wght@300&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Roboto:wght@300&family=Shippori+Antique+B1&family=Source+Sans+Pro&display=swap"
     rel="stylesheet">
 </head>
+
 <body>
   <script src="clothes.js"></script>
   <header class="main_header" id="main_header">
@@ -28,22 +30,22 @@
         <li class="item_clothes"><a href="">Одежда</a>
           <ul class="menu_clothes">
             <div class="auto">
-            <li ><a href="">Футболки/Лонгсливы</a></li>
-            <li ><a href="">Рубашки</a></li>
-            <li ><a href="">Платья</a></li>
-            <li ><a href="">Спортивные костюмы</a></li>
-          </div>
+              <li><a href="">Футболки/Лонгсливы</a></li>
+              <li><a href="">Рубашки</a></li>
+              <li><a href="">Платья</a></li>
+              <li><a href="">Спортивные костюмы</a></li>
+            </div>
             <li class="menu_img_bags"><img src="./images/clothes.jpg"></li>
           </ul>
         </li>
         <li class="item_bags"><a href="">Сумки</a>
           <ul class="menu_clothes">
-          <div class="auto">
-            <li><a href="">Шопперы</a></li>
-            <li><a href="">Поясные</a></li>
-            <li><a href="">Для ноутбука</a></li>
-          </div>
-            <li class="menu_img_bags"><img src="./images/bags.jpg"></li>         
+            <div class="auto">
+              <li><a href="">Шопперы</a></li>
+              <li><a href="">Поясные</a></li>
+              <li><a href="">Для ноутбука</a></li>
+            </div>
+            <li class="menu_img_bags"><img src="./images/bags.jpg"></li>
           </ul>
         </li>
         <li><a href="">Подарочная карта</a></li>
@@ -65,258 +67,730 @@
     </nav>
   </header>
   <main class="main_clothes">
-    <aside class="nav_left_block" >
+    <aside class="nav_left_block">
       <ul class="nav_aside_clothes">
         <li class="nav_aside_clothes_main_item">Одежда</li>
-        <li class="tablinks" onclick="openContent(event, 't-shirt')" id="defaultOpen" >Футболки/Лонгсливы</li>
+        <li class="tablinks" onclick="openContent(event, 't-shirt')" id="defaultOpen">Футболки/Лонгсливы</li>
         <li class="tablinks" onclick="openContent(event, 'shirts')">Рубашки</li>
-        <li class="tablinks" onclick="openContent(event, 'dress')" >Платья</li>
+        <li class="tablinks" onclick="openContent(event, 'dress')">Платья</li>
         <li class="tablinks" onclick="openContent(event, 'costumes')">Спортивные костюмы</li>
       </ul>
     </aside>
     <section class="category__wrapper">
       <div id="t-shirt" class="tabcontent">
-      <article class="product_card">
-        <div class="product_card__container">
-          <img src="./images/img_clothes/top3.jpg">
-        <div class="overlay-block">
-          <button class="button-add_into_bag">Добавить в корзину</button>
-          <ul class="list-size">
-            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
-            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
-          </ul>
-        </div>
-      </div>        
-        <div class="product_card-content">
-          <div class="product_card-name">
-            <p>Укороченная футболка</p>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top1.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
           </div>
-          <div class="product_card-price">
-            BYR 50
-          </div> 
-          <span class="material-icons" onclick="return ChangeColor(this);">
-            favorite
-            </span> 
-        </div>
-      </article>
-    </div>
-    <div id="shirts" class="tabcontent">
-      <article class="product_card">
-        <div class="product_card__container">
-          <img src="./images/img_clothes/top3.jpg">
-        <div class="overlay-block">
-          <button class="button-add_into_bag">Добавить в корзину</button>
-          <ul class="list-size">
-            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
-            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
-          </ul>
-        </div>
-      </div>        
-        <div class="product_card-content">
-          <div class="product_card-name">
-            <p>Укороченная футболка</p>
-          </div>
-          <div class="product_card-price">
-            BYR 50
-          </div> 
-          <span class="material-icons" onclick="return ChangeColor(this);">
-            favorite
-            </span> 
-        </div>
-      </article>
-      <article class="product_card">
-        <div class="product_card__container">
-          <img src="./images/img_clothes/top3.jpg">
-        <div class="overlay-block">
-          <button class="button-add_into_bag">Добавить в корзину</button>
-          <ul class="list-size">
-            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
-            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
-          </ul>
-        </div>
-      </div>        
-        <div class="product_card-content">
-          <div class="product_card-name">
-            <p>Укороченная футболка</p>
-          </div>
-          <div class="product_card-price">
-            BYR 50
-          </div> 
-          <span class="material-icons" onclick="return ChangeColor(this);">
-            favorite
-            </span> 
-        </div>
-      </article>
-    </div>
-    <div id="dress" class="tabcontent">
-      <article class="product_card">
-        <div class="product_card__container">
-          <img src="./images/img_clothes/top3.jpg">
-        <div class="overlay-block">
-          <button class="button-add_into_bag">Добавить в корзину</button>
-          <ul class="list-size">
-            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
-            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
-          </ul>
-        </div>
-      </div>        
-        <div class="product_card-content">
-          <div class="product_card-name">
-            <p>Укороченная футболка</p>
-          </div>
-          <div class="product_card-price">
-            BYR 50
-          </div> 
-          <span class="material-icons" onclick="return ChangeColor(this);">
-            favorite
-            </span> 
-        </div>
-      </article>
-      <article class="product_card">
-        <div class="product_card__container">
-          <img src="./images/img_clothes/top3.jpg">
-        <div class="overlay-block">
-          <button class="button-add_into_bag">Добавить в корзину</button>
-          <ul class="list-size">
-            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
-            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
-          </ul>
-        </div>
-      </div>        
-        <div class="product_card-content">
-          <div class="product_card-name">
-            <p>Укороченная футболка</p>
-          </div>
-          <div class="product_card-price">
-            BYR 50
-          </div> 
-          <span class="material-icons" onclick="return ChangeColor(this);">
-            favorite
-            </span> 
-        </div>
-      </article>
-      <article class="product_card">
-        <div class="product_card__container">
-          <img src="./images/img_clothes/top3.jpg">
-        <div class="overlay-block">
-          <button class="button-add_into_bag">Добавить в корзину</button>
-          <ul class="list-size">
-            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
-            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
-          </ul>
-        </div>
-      </div>        
-        <div class="product_card-content">
-          <div class="product_card-name">
-            <p>Укороченная футболка</p>
-          </div>
-          <div class="product_card-price">
-            BYR 50
-          </div> 
-          <span class="material-icons" onclick="return ChangeColor(this);">
-            favorite
-            </span> 
-        </div>
-      </article>
-    </div>
-    <div id="costumes" class="tabcontent">
-      <article class="product_card">
-        <div class="product_card__container">
-          <img src="./images/img_clothes/top3.jpg">
-        <div class="overlay-block">
-          <button class="button-add_into_bag">Добавить в корзину</button>
-          <ul class="list-size">
-            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
-            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
-          </ul>
-        </div>
-      </div>        
-        <div class="product_card-content">
-          <div class="product_card-name">
-            <p>Укороченная футболка</p>
-          </div>
-          <div class="product_card-price">
-            BYR 50
-          </div> 
-          <span class="material-icons" onclick="return ChangeColor(this);">
-            favorite
-            </span> 
-        </div>
-      </article>
-      <article class="product_card">
-        <div class="product_card__container">
-          <img src="./images/img_clothes/top3.jpg">
-        <div class="overlay-block">
-          <button class="button-add_into_bag">Добавить в корзину</button>
-          <ul class="list-size">
-            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
-            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
-          </ul>
-        </div>
-      </div>        
-        <div class="product_card-content">
-          <div class="product_card-name">
-            <p>Укороченная футболка</p>
-          </div>
-          <div class="product_card-price">
-            BYR 50
-          </div> 
-          <span class="material-icons" onclick="return ChangeColor(this);">
-            favorite
-            </span> 
-        </div>
-      </article>
-      <article class="product_card">
-        <div class="product_card__container">
-          <img src="./images/img_clothes/top3.jpg">
-        <div class="overlay-block">
-          <button class="button-add_into_bag">Добавить в корзину</button>
-          <ul class="list-size">
-            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
-            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
-          </ul>
-        </div>
-      </div>        
-        <div class="product_card-content">
-          <div class="product_card-name">
-            <p>Укороченная футболка</p>
-          </div>
-          <div class="product_card-price">
-            BYR 50
-          </div> 
-          <span class="material-icons" onclick="return ChangeColor(this);">
-            favorite
-            </span> 
-        </div>
-      </article>
-      <article class="product_card">
-        <div class="product_card__container">
-          <img src="./images/img_clothes/top3.jpg">
-        <div class="overlay-block">
-          <button class="button-add_into_bag">Добавить в корзину</button>
-          <ul class="list-size">
-            <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
-            <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
-          </ul>
-        </div>
-      </div>        
-        <div class="product_card-content">
-          <div class="product_card-name">
-            <p>Укороченная футболка</p>
-          </div>
-          <div class="product_card-price">
-            BYR 50
-          </div> 
-          <span class="material-icons" onclick="return ChangeColor(this);">
-            favorite
-            </span> 
-        </div>
-      </article>
-    </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
 
-      </section>
-             
-      
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top2.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top3.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top4.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top5.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top6.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top7.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top9.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top10.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top11.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top12.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/top/top13.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </div>
+        </article>
+      </div>
+      <div id="shirts" class="tabcontent">
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/bluz/bluz1.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/bluz/bluz2.png">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/bluz/bluz3.png">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/bluz/bluz4.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+      </div>
+      <div id="dress" class="tabcontent">
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/dress/drss1.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/dress/drss2.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/dress/drss3.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/dress/drss4.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/dress/drss5.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/dress/drss6.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+      </div>
+      <div id="costumes" class="tabcontent">
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/costum/costum1.JPG">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/costum/costum2.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/costum/costum3.JPG">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/costum/costum4.JPG">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/costum/costum5.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/costum/costum6.JPG">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/costum/costum7.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+        <article class="product_card">
+          <div class="product_card__container">
+            <img src="./images/img_clothes/costum/costum8.jpg">
+            <div class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </div>
+          </div>
+          <div class="product_card-content">
+            <div class="product_card-name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product_card-price">
+              BYR 50
+            </div>
+            <div class="icons_text-aligin_right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+
   </main>
   <footer class="main_footer">
     <div class="footer_wrapper">

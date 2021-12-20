@@ -30,21 +30,6 @@
   cursor: pointer;
   
 }
-/* input[type="checkbox"] {
-  display: none;
-}
-
-label[for] {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  cursor: pointer;
-}
-
-input[id]:checked~label[for] svg {
-  fill: rgb(184, 89, 89);
-
-} */
 
 .product_card__container {
   position: relative;
@@ -68,10 +53,11 @@ input[id]:checked~label[for] svg {
 
 .button-add_into_bag {
   position: relative;
-  padding: 0.5em;
+  padding: 1em;
   top: 50%;
   cursor: pointer;
 }
+
 
 .list-size__item {
   display: inline-block;
@@ -80,4 +66,64 @@ input[id]:checked~label[for] svg {
   background-color: rgba(255, 255, 255, 0.616);
   font-weight: bold;
   cursor: pointer;
+}
+.icons_text-aligin_right {
+  text-align: right;
+  cursor: pointer;
+}
+
+
+
+
+__________________________
+.button-add_into_bag {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  margin: 10px 20px;
+  position: relative;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, .4);
+  background: none;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.button-add_into_bag:before, .button-add_into_bag:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.button-add_into_bag:before {
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+}
+.button-add_into_bag:after {
+  top: 0;
+  right: 0;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+}
+.button-add_into_bag:hover:before, 
+.button-add_into_bag:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.button-add_into_bag:hover:before {
+  transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+}
+.button-add_into_bag:hover:after {
+  transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+}
+.button-add_into_bag:hover {
+  background: rgb(239 219 170 / 40%);
 }
