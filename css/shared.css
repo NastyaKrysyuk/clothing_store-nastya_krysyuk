@@ -128,10 +128,7 @@ width: 32%;
 .display_inline {
   display:inline-block;
 }
- .main_footer {
-   
-   padding: 1rem;
- }
+
   
 .footer_wrapper a {
   text-decoration: none;
@@ -342,4 +339,11 @@ li.item_bags:hover .menu_clothes {
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 1em;
+}
+
+/*____progress_bar*/
+.progress-bar {
+  height: 0.3em;
+  background: rgba(0, 0, 0, 0.425);
+  width: 0%;
 }

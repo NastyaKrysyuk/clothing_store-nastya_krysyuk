@@ -81,12 +81,35 @@
   width: 50%;
 }
 
-.about__social {
-  min-height: 380px;
+.about__social-background {
+  min-height: 660px;
   max-height: 800px;
-  background: url(../images/DSCF4604_2.jpg) top center no-repeat;
+  background: url(../images/DSCF4604__1.jpg) top center no-repeat;
   background-size: cover;
-  opacity: 0.6;
- 
+  opacity: 0.8;
 }
 
+.about__social {
+  position: relative;
+  margin-bottom: 7em;
+}
+
+.about__social-wrapper{
+  position:absolute;
+  top: 30%;
+  left: 15%;
+  transform: translate(-50%,-50%);
+  max-width: 25%;
+  background-color:rgba(239, 219, 170, 0.616) ;
+  padding: 1em;
+}
+
+.about__social-title{
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.about__social-text,
+.about__social-icons-list {
+  margin-top: 1em;
+}
