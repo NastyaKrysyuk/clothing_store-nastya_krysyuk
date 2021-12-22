@@ -1,15 +1,15 @@
 function openContent(evt, content_clothes) {
   var i, tabcontent, tablinks
-  tabcontent = document.getElementsByClassName("tabcontent");
+  tabcontent = document.getElementsByClassName("tabcontent_clothes");
   for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks");
+  tablinks = document.getElementsByClassName("tablinks_clothes");
   for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+      tablinks[i].className = tablinks[i].className.replace(" active_clothes", "");
   }
   document.getElementById(content_clothes).style.display = "block";
-  evt.currentTarget.className += " active";
+  evt.currentTarget.className += " active_clothes";
 }
 
 function ChangeColor(Element) {

@@ -21,3 +21,17 @@ function openBag() {
 function closeBag() {
   document.getElementById("bag_overlay-block").style.width = "0";
 }
+
+function openContentBag(evt, content_bag) {
+  var i, tabcontent, tablinks
+  tabcontent = document.getElementsByClassName("tabcontent_bag");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks_bag");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active_bag", "");
+  }
+  document.getElementById(content_bag).style.display = "block";
+  evt.currentTarget.className += " active_bag";
+}
