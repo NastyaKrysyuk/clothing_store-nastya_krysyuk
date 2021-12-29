@@ -1,0 +1,55 @@
+.gift-card__wrapper-content {
+ margin: 8rem auto;
+ width: max-content;
+ background-color: rgba(255, 255, 255, 0.534);
+ padding: 3em;
+}
+
+.gift-card__details {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-left: 2em;
+  
+}
+
+.gift-card__info__list{
+  margin:2em 0;
+}
+
+.gift-card__info__list__item {
+  list-style-type: disc;
+  line-height: 1.5em;
+}
+.gift-card__form>* {
+  display: block;
+  margin-bottom: 1.2em;
+  border-width: 0 0 1px;
+  border-color: gray;
+  width: 80%;
+  background-color: inherit;
+  padding-bottom:1.2em;
+  font-size: 1rem;
+}
+
+.gift-card__form>*:focus {
+  outline-style: none;
+  background-color: rgba(239, 219, 170, 0.274);
+}
+
+
+input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.checked-place {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #b8b6b6;
+  text-align: center;
+}
+
+.button__form {
+  border: 0.016rem solid rgba(128, 128, 128, 0.678);
+}

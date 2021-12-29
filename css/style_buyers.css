@@ -1,0 +1,43 @@
+.buyers__main {
+  margin-top: 5rem;
+}
+
+.buyers_display-flex {
+  display:none;
+  align-items: center;
+ margin-bottom: 5em;
+  padding: 3em 2em 5em 2em;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.651) ; 
+}
+.buyers_display-flex > * {
+  flex: 1 100%;
+} 
+
+.buyers__info > * {
+  line-height: 1.5rem;
+  margin-bottom: 2em;
+  border-bottom:0.016em solid rgba(151, 148, 148, 0.678);
+}
+
+.buyers__image-container>* {
+  opacity: 0.8;
+}
+
+.buyers__accordion {
+  text-align: center;
+   text-transform: uppercase;
+  cursor: pointer;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.404) ;
+  transition: all 0.4s;
+}
+
+.active, .buyers__accordion:hover {
+  background-color:  rgba(255, 255, 255, 0.555) ;
+}
+
+.buyers__accordion::after {
+  content: url(../images/outline_expand_more_black_48dp.png);
+  vertical-align: middle;
+}

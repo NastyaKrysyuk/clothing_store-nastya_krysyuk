@@ -35,3 +35,9 @@ function openContentBag(evt, content_bag) {
   document.getElementById(content_bag).style.display = "block";
   evt.currentTarget.className += " active_bag";
 }
+
+function Checked(Element) {
+	if (Element.innerHTML == '') Element.innerHTML = '&#10004';
+	else Element.innerHTML = '';
+	return false;
+}

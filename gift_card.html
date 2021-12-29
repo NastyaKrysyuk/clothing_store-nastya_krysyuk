@@ -17,8 +17,7 @@
 </head>
 
 <body>
-  <script src="shared.js"></script>
-
+  <div class="btn-toTop" id="toTop"></div>
   <div id="search_overlay-block" class="search_overlay-block" >
     <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">×</a>
     <div class="search_overlay-content">
@@ -117,10 +116,48 @@
     <div class="gift-card__wrapper-content">
      <img src="./images/IMG_02471111.JPG" alt="">   
      <div class="gift-card__details">
-           <h2>ЭЛЕКТРОННАЯ ПОДАРОЧНАЯ КАРТА</h2>
-      </div>
-      <div class="gift-card__form">
-
+           <h2 class="gift-card__title">ЭЛЕКТРОННЫЙ ПОДАРОЧНЫЙ СЕРТИФИКАТ</h2>
+           <div class="gift-card__info">
+             <ul class="gift-card__info__list">
+               <li class="gift-card__info__list__item">
+                 Выберите эту опцию,
+                и в указанный вами день и час карта будет отправлена получателю.
+              </li>
+               <li class="gift-card__info__list__item">
+                Подарочная карта действительна на протяжении 
+                трех лет с даты отправки получателю.
+                </li>
+               <li class="gift-card__info__list__item">
+                После покупки подарочная карта не подлежит возврату в KOMBINACJA.
+                </li>
+             </ul>
+           </div>
+           <div>
+            <form class="gift-card__form" action="">
+              <select name="gift-card_sum" id="gift-card_sum">
+                <option value="50">BYR 50</option>
+                <option value="100">BYR 100</option>
+                <option value="200">BYR 200</option>
+              </select>
+              <input type="text" placeholder="Введите ваше имя">
+              <input type="text" placeholder="Введите сообщение">
+              <input type="date" placeholder="Дата дрставки">
+              <input type="time" placeholder="Время доставки">
+              <p>Данные получателя:</p>
+              <input type="text" placeholder="Введите имя">
+              <input type="email" placeholder="Введите электронную почту">
+              <input type="email" placeholder="Повторите электронную почту">
+              <input type="tel" placeholder="Мобильный телефон" >
+              <input id="politica" type="checkbox">
+              <label  for="politica">
+                <div class="checked-place" onclick='Checked(this)' >
+                </div>
+                <span class="upper">Подтвердите оплату</span>
+                <a class="politica" href="">Условия использования подарочной карты</a>
+              </label>
+              <button class="button-add_into_bag button__form" type="submit">Добавить в корзину</button>
+            </form>
+          </div>
       </div>
     </div>
   </main>
@@ -201,12 +238,12 @@
       </div>
       <div class="footer_newsletter">
         <h3 class="header">Newsletter</h3>
-        <input type="email" placeholder="Введите адрес электронной почты">
+        <input  type="email" placeholder="Введите адрес электронной почты">
         <a href="" class="newsletter-btn "><span class="arrow-right"></span></a>
       </div>
       <div class="footer_developer">
 
-        <p class="display_inline">Вы принимаете условия <a href="">политики конфиденциальности</a>
+        <p class="display_inline politica">Вы принимаете условия <a href="">политики конфиденциальности</a>
           и <a href=""> пользовательского соглашения </a>
           каждый раз когда оставляете свои данные
           в любой форме обратной связи на сайте <a href="index.html">kombinacja.by</a> .
@@ -220,6 +257,9 @@
     </div>
 
   </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="skroll.js"></script>
+  <script src="shared.js"></script>
 </body>
 
 </html>
