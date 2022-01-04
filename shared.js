@@ -8,27 +8,27 @@ function myFunction() {
 }
 
 function openSearch() {
-  document.getElementById("search_overlay-block").style.height = "100%";
+  document.getElementById("search").style.height = "100%";
 }
 
 function closeSearch() {
-  document.getElementById("search_overlay-block").style.height = "0%";
+  document.getElementById("search").style.height = "0%";
 }
 function openBag() {
-  document.getElementById("bag_overlay-block").style.width = "max-content";
+  document.getElementById("bag").style.width = "max-content";
 }
 
 function closeBag() {
-  document.getElementById("bag_overlay-block").style.width = "0";
+  document.getElementById("bag").style.width = "0";
 }
 
 function openContentBag(evt, content_bag) {
   var i, tabcontent, tablinks
-  tabcontent = document.getElementsByClassName("tabcontent_bag");
+  tabcontent = document.getElementsByClassName("bag__content");
   for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablinks_bag");
+  tablinks = document.getElementsByClassName("bag__tablinks");
   for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active_bag", "");
   }

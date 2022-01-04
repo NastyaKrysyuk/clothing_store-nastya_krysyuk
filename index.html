@@ -18,87 +18,89 @@
 
 <body>
   <div class="btn-toTop" id="toTop"></div>
-  <div id="search_overlay-block" class="search_overlay-block" >
-    <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">×</a>
-    <div class="search_overlay-content">
-      <div class="footer_newsletter">
-        <input class="search_input" type="search" placeholder="Введите поисковой запрос">
+  <div id="search" class="search">
+    <a role="button" href="javascript:void(0)" class="btn-close" onclick="closeSearch()">×</a>
+    <div class="search-wrapper">
+      <input class="search__input" type="search" placeholder="Введите поисковой запрос">
+    </div>
+  </div>
+  <div id="bag" class="bag">
+    <a href="javascript:void(0)" class="btn-close" onclick="closeBag()">×</a>
+    <div class="bag-wrapper">
+      <ul>
+        <li class="bag__tablinks" onclick="openContentBag(event, 'my-bag')">
+          <span class="material-icons">
+            shopping_bag
+          </span>
+          Моя корзина(0)
+        </li>
+        <li class="bag__tablinks" onclick="openContentBag(event, 'favorite')">
+          <span class="material-icons ">
+            favorite
+          </span>
+          Избранное(0)
+        </li>
+      </ul>
+      <div id="my-bag" class="bag__content" id="defaultOpen">
+        <span class="content_weight-bold">Корзина пустая.</span> <br>Чтобы добавить в корзину
+        понравившийся товар, нажмите <br>
+        «Добавить в корзину».
       </div>
+      <div id="favorite" class="bag__content">
+        <span class="content_weight-bold">У вас еще нет сохраненных товаров!</span>
+        Проверьте, нет ли у вас товаров в корзине.
+        Купите их, пока они не закончились!
+      </div>
+    </div>
+  </div>
 
-    </div>
-  </div>
-  <div id="bag_overlay-block" class="bag_overlay-block" >
-    <a href="javascript:void(0)" class="closebtn" onclick="closeBag()">×</a>
-    <div class="bag_overlay-content">
-        <ul class="list_bag">
-          <li class="tablinks_bag" onclick="openContentBag(event, 'bag')">
-            <span class="material-icons">
-              shopping_bag
-            </span>
-            Моя корзина(0)
-          </li>
-          <li class="tablinks_bag" onclick="openContentBag(event, 'favorite')">
-            <span class="material-icons ">
-              favorite
-            </span>
-             Избранное(0)
-            </li>
-        </ul>
-        <div id="bag" class="tabcontent_bag" id="defaultOpen">
-          <div class="content">
-                <span class="bold">Корзина пустая.</span> <br>Чтобы добавить в корзину 
-          понравившийся товар, нажмите <br>
-          «Добавить в корзину».
-          </div>
-        </div>
-        <div id="favorite" class="tabcontent_bag">
-          <div class="content">
-            <span class="bold">У вас еще нет сохраненных товаров!</span> 
-            Проверьте, нет ли у вас товаров в корзине.
-             Купите их, пока они не закончились!
-      </div>
-    </div>
-    </div>
-  </div>
-  
-  <header class="main_header" id="main_header">
-    <div class="main_logo">
+  <header class="main-header">
+    <div class="logo">
       <a href="index.html">
         <img src="./images/3_kombinacja_лого_черн.OULWl.png">
       </a>
     </div>
-    <nav class="main_nav_items">
-      <ul>
-        <li class="item_clothes"><a href="">Одежда</a>
-          <ul class="menu_clothes">
-            <div class="auto">
-            <li ><a href="./clothes.html">Футболки/Лонгсливы</a></li>
-            <li ><a href="">Рубашки</a></li>
-            <li ><a href="">Платья</a></li>
-            <li ><a href="">Спортивные костюмы</a></li>
+    <section class="main-header__menu">
+      <ul class="menu-list">
+        <li class="clothes menu-list__item"><a href="">Одежда</a>
+          <div class="hidden-block">
+            <ul class="hidden-block__submenu">
+              <li><a href="./clothes.html">Футболки/Лонгсливы</a></li>
+              <li><a href="">Рубашки</a></li>
+              <li><a href="">Платья</a></li>
+              <li><a href="">Спортивные костюмы</a></li>
+            </ul>
+            <div class="hidden-block__img-wrapper">
+              <img src="./images/clothes.jpg">
+              <img src="./images/clothes1.JPG">
+              <img src="./images/clothes2.jpg">
+            </div>
           </div>
-            <li class="menu_img_bags"><img src="./images/clothes.jpg"></li>
-          </ul>
         </li>
-        <li class="item_bags"><a href="">Сумки</a>
-          <ul class="menu_clothes">
-          <div class="auto">
-            <li><a href="">Шопперы</a></li>
-            <li><a href="">Поясные</a></li>
-            <li><a href="">Для ноутбука</a></li>
+        <li class="bags menu-list__item"><a href="">Сумки</a>
+          <div class="hidden-block">
+            <ul class="hidden-block__submenu">
+              <li><a href="">Шопперы</a></li>
+              <li><a href="">Поясные</a></li>
+              <li><a href="">Для ноутбука</a></li>
+            </ul>
+            <div class="hidden-block__img-wrapper">
+              <img src="./images/bag.jpg">
+              <img src="./images/bag1.jpg">
+              <img src="./images/bag2.jpg">
+            </div>
           </div>
-            <li class="menu_img_bags"><img src="./images/bags.jpg"></li>         
-          </ul>
         </li>
-        <li><a href="">Подарочная карта</a></li>
-        <li><a href="">Покупателям</a></li>
-        <li><a href="about.html">О нас</a></li>
+        <li class="gift-card"><a href="">Подарочная карта</a></li>
+        <li class="buyers"><a href="">Покупателям</a></li>
+        <li class="about"><a href="">О нас</a></li>
       </ul>
-    </nav>
-    <nav class="main_nav_toolbar">
-      <ul>
+    </section>
+
+    <section class="main-header__toolbar">
+      <ul class="toolbar-list">
         <li class="icon_search" onclick="openSearch()">
-         <span class="material-icons">search</span>
+          <span class="material-icons">search</span>
           Поиск
         </li>
         <li class="icon_bag" onclick="openBag()">
@@ -106,10 +108,10 @@
           Корзина
         </li>
       </ul>
-    </nav>
-    <div class="progress-container">
+    </section>
+    <div class="main-header__progress-bar">
       <div class="progress-bar" id="myBar">
-       </div>
+      </div>
     </div>
   </header>
   <main class="main_wrapper">
@@ -123,7 +125,11 @@
       unisex | w&m <br>
       доставка по миру
       <img class="material-icons"  src="./images/outline_language_white_24dp.png">
-      
+      <div class="nav_block">
+      <a href="">Покупателям</a>
+      <a href="">О нас</a>
+      <a href="">Подарочный сертификат</a>
+    </div>
     </div>
   </div>
     <div class="main_top_block">
@@ -158,11 +164,11 @@
       </a>
     </div>
   </main>
-  <footer class="main_footer">
-    <div class="footer_wrapper">
-      <div class="footer_contacts">
-        <ul class="list_contacts">
-          <li class="item_contacts_phone display_inline">
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer__contacts">
+        <ul class="footer__contacts-list">
+          <li>
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
               style=" fill:rgb(170,170,168) ;">
               <path
@@ -172,8 +178,9 @@
             <a href="tel:8 800 350-93-85">
               +375 (29) 342-01-11
             </a>
+            <span class="contacts-info">c 10:00 до 19:00 пн-пт</span>
           </li>
-          <li class="item_contacts_messenger display_inline">
+          <li>
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
               style=" fill:rgb(170,170,168) ;">
               <path
@@ -184,10 +191,11 @@
             <a href="https://api.whatsapp.com/send?phone=79858819304">
               +375 (33) 880-87-61
             </a>
+            <span class="contacts-info">whatsapp</span>
           </li>
-          <li class="item_contacts_social display_inline">
-            <ul class="list_icons_social">
-              <li class="contacts_icons_social display_inline"><a href="">
+          <li>
+            <ul>
+              <li class="social-icons"><a href="">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                     style=" fill:rgb(170,170,168) ;">
                     <path
@@ -195,7 +203,7 @@
                     </path>
                   </svg>
                 </a></li>
-              <li class="contacts_icons_social display_inline"><a href="">
+              <li class="social-icons"><a href="">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                     style=" fill:rgb(170,170,168);">
                     <path
@@ -203,7 +211,7 @@
                     </path>
                   </svg>
                 </a></li>
-              <li class="contacts_icons_social display_inline"><a href="">
+              <li class="social-icons "><a href="">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                     style=" fill:rgb(170,170,168);">
                     <path
@@ -216,32 +224,31 @@
         </ul>
 
       </div>
-      <div class="footer_consumer">
+      <div class="footer__consumer">
         <h3 class="header">Покупателям</h3>
-        <ul class="list_consumer">
+        <ul class="footer__consumer-list">
           <li><a href="">Доставка и оплата</a></li>
           <li><a href="">Возврат и обмен</a></li>
           <li><a href="">Уход за одеждой</a></li>
         </ul>
       </div>
-      <div class="footer_navigation">
+      <div class="footer__navigation">
         <h3 class="header">Навигация</h3>
-        <ul class="list_navigation">
+        <ul class="footer__navigation-list">
           <li><a href="">Одежда</a></li>
           <li><a href="">Сумки</a></li>
           <li><a href="">Подарочная карта</a></li>
           <li><a href="">О нас</a></li>
         </ul>
       </div>
-      <div class="footer_newsletter">
+      <div class="footer__newsletter">
         <h3 class="header">Newsletter</h3>
-        <input type="email" placeholder="Введите адрес электронной почты">
-        <a href="" class="newsletter-btn "><span class="arrow-right"></span></a>
+        <input class="newsletter__input" type="email" placeholder="Введите адрес электронной почты">
+        <a href="" role="button" class="newsletter__btn "><span class="arrow-right"></span></a>
       </div>
-      <div class="footer_developer">
-
-        <p class="display_inline">Вы принимаете условия <a href="">политики конфиденциальности</a>
-          и <a href=""> пользовательского соглашения </a>
+      <div class="footer__developer">
+        <p>Вы принимаете условия <a href="" class="politica">политики конфиденциальности</a>
+          и <a href="" class="politica"> пользовательского соглашения </a>
           каждый раз когда оставляете свои данные
           в любой форме обратной связи на сайте <a href="index.html">kombinacja.by</a> .
         </p>
