@@ -1,16 +1,16 @@
-.product_card {
+.product-card {
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0.7em;
   display: inline-block;
   margin-bottom: 0.3em;
 }
 
-.product_card-content {
+.product-card__content {
   position: relative;
   margin: 0.5em;
 }
 
-.product_card-price {
+.product-card__price {
   font-weight: bold;
   font-size: 0.8em;
   margin-top: 0.3em;
@@ -31,7 +31,7 @@
   
 }
 
-.product_card__container {
+.product-card__container {
   position: relative;
 }
 
@@ -47,7 +47,7 @@
   text-align: center;
 }
 
-.product_card__container:hover .overlay-block {
+.product-card__container:hover .overlay-block {
   opacity: 1;
 }
 
@@ -73,7 +73,7 @@
   font-weight: bold;
   cursor: pointer;
 }
-.icons_text-aligin_right {
+.icons_aligin-right {
   text-align: right;
   cursor: pointer;
 }

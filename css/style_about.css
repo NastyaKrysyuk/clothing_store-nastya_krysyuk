@@ -1,8 +1,8 @@
-.about__container-content {
+.about-wrapper{
   position: relative;
 }
 
-.about__block-content {
+.content {
   width: 1320px;
   height: 680px;
   position: absolute;
@@ -12,7 +12,7 @@
   background-color: rgba(255, 255, 255, 0.507);
 }
 
-.block_logo {
+.content__logo {
   width: max-content;
   position: absolute;
   top: 50%;
@@ -21,7 +21,7 @@
   transition: box-shadow 0.5s ease-in-out;
 }
 
-.block_text {
+.content__text {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -30,13 +30,13 @@
   text-align: end;
 }
 
-.block_logo:hover {
+.content__logo:hover {
   box-shadow: 1px 2px 90px 6px rgba(0, 0, 0, 0.247);
 }
 
 
 
-.about__list-concept__item {
+.concept__list-item {
   list-style: circle;
   color: rgba(239, 219, 170, 0.616);
   text-transform: uppercase;
@@ -45,14 +45,14 @@
 }
 
 
-.about__list-wrapper {
+.concept {
   position: absolute;
   right: 3.3em;
   top: 803px;
 
 }
 
-.about__list-wrapper {
+.concept {
   width: max-content;
 }
 
@@ -74,7 +74,7 @@
 
 /*gallary*/
 
-.about__gallery-title {
+.gallery__title {
   color: rgba(239, 219, 170, 0.616);
   text-transform: uppercase;
   font-size: 9em;
@@ -83,7 +83,7 @@
 }
 
 
-.about__gallery-wrapper {
+.gallery {
   background-color: rgba(0, 0, 0, 0.384);
   text-align: center;
   margin: 5em 0;
@@ -94,15 +94,13 @@
   position: relative;
 }
 
-.about__gallery-wrapper>* {
+.gallery>* {
   display: inline-block;
   vertical-align: middle;
 }
 
 .preview {
   max-width: 360px;
-  width: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -177,11 +175,10 @@
   z-index: 10;
 }
 
-.popup {
+.open-img {
   position: fixed;
   width: 100%;
   max-width: 1170px;
-  /* border: 1px solid grey; */
   padding: 5px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -195,7 +192,7 @@
   display: none;
   z-index: 11;
 }
-.popup.active {
+.open-img.active {
   display: block;
   width: max-content;
   height: 70%;
@@ -238,14 +235,8 @@
 
 
 
-.about__info {
-  font-size: 1rem;
-  width: 50%;
-}
 
-
-
-.about__social-background {
+.social__background {
   min-height: 660px;
   max-height: 800px;
   background: url(../images/DSCF4604__1.jpg) top center no-repeat;
@@ -253,12 +244,12 @@
   opacity: 0.8;
 }
 
-.about__social {
+.social {
   position: relative;
   margin-bottom: 7em;
 }
 
-.about__social-wrapper {
+.social__content-wrapper{
   position: absolute;
   top: 30%;
   left: 15%;
@@ -268,12 +259,12 @@
   padding: 1em;
 }
 
-.about__social-title {
+.social__title {
   text-transform: uppercase;
   letter-spacing: .05em;
 }
 
-.about__social-text,
-.about__social-icons-list {
+.social__text,
+.social-icons__list {
   margin-top: 1em;
 }

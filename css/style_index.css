@@ -5,8 +5,9 @@
   width: max-content;
   margin: auto;
   margin-top: 4.3em;
-  /* transform: scale(0.92); */
 }
+
+
 div[class^="img"] {
   margin: 0.5em;
   display: flex;
@@ -127,7 +128,7 @@ div[class^="img"]:hover{
 }
 
 
-@-webkit-keyframes fill {
+@keyframes fill {
   0% {
     width: 0%;
     height: 1px;

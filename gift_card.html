@@ -114,54 +114,52 @@
       </div>
     </div>
   </header>
-  <main class="gift-card__main">
-    <div class="gift-card__wrapper-content">
-     <img src="./images/IMG_02471111.JPG" alt="">   
-     <div class="gift-card__details">
-           <h2 class="gift-card__title">ЭЛЕКТРОННЫЙ ПОДАРОЧНЫЙ СЕРТИФИКАТ</h2>
-           <div class="gift-card__info">
-             <ul class="gift-card__info__list">
-               <li class="gift-card__info__list__item">
-                 Выберите эту опцию,
-                и в указанный вами день и час карта будет отправлена получателю.
-              </li>
-               <li class="gift-card__info__list__item">
-                Подарочная карта действительна на протяжении 
-                трех лет с даты отправки получателю.
-                </li>
-               <li class="gift-card__info__list__item">
-                После покупки подарочная карта не подлежит возврату в KOMBINACJA.
-                </li>
-             </ul>
-           </div>
-           <div>
-            <form class="gift-card__form" action="">
-              <select name="gift-card_sum" id="gift-card_sum">
-                <option value="50">BYR 50</option>
-                <option value="100">BYR 100</option>
-                <option value="200">BYR 200</option>
-              </select>
-              <input type="text" placeholder="Введите ваше имя">
-              <input type="text" placeholder="Введите сообщение">
-              <input type="date" placeholder="Дата дрставки">
-              <input type="time" placeholder="Время доставки">
-              <p>Данные получателя:</p>
-              <input type="text" placeholder="Введите имя">
-              <input type="email" placeholder="Введите электронную почту">
-              <input type="email" placeholder="Повторите электронную почту">
-              <input type="tel" placeholder="Мобильный телефон" >
-              <input id="politica" type="checkbox">
-              <label  for="politica">
-                <div class="checked-place" onclick='Checked(this)' >
-                </div>
-                <span class="upper">Подтвердите оплату</span>
-                <a class="politica" href="">Условия использования подарочной карты</a>
-              </label>
-              <button class="button-add_into_bag button__form" type="submit">Добавить в корзину</button>
-            </form>
-          </div>
-      </div>
-    </div>
+  <main>
+    <section class="gift-card-wrapper">
+      <img src="./images/IMG_02471111.JPG" alt="">
+      <article class="gift-card__details">
+        <h2 class="gift-card__details-title">ЭЛЕКТРОННЫЙ ПОДАРОЧНЫЙ СЕРТИФИКАТ</h2>
+          <ul class="gift-card__info-list">
+            <li class="info-list__item">
+              Выберите эту опцию,
+              и в указанный вами день и час карта будет отправлена получателю.
+            </li>
+            <li class="info-list__item">
+              Подарочная карта действительна на протяжении
+              трех лет с даты отправки получателю.
+            </li>
+            <li class="info-list__item">
+              После покупки подарочная карта не подлежит возврату в KOMBINACJA.
+            </li>
+          </ul>
+        <div>
+          <form class="gift-card__form" action="">
+            <select name="gift-card_sum" id="gift-card_sum">
+              <option value="50">BYR 50</option>
+              <option value="100">BYR 100</option>
+              <option value="200">BYR 200</option>
+            </select>
+            <input type="text" placeholder="Введите ваше имя">
+            <input type="text" placeholder="Введите сообщение">
+            <input type="date" placeholder="Дата дрставки">
+            <input type="time" placeholder="Время доставки">
+            <p>Данные получателя:</p>
+            <input type="text" placeholder="Введите имя">
+            <input type="email" placeholder="Введите электронную почту">
+            <input type="email" placeholder="Повторите электронную почту">
+            <input type="tel" placeholder="Мобильный телефон">
+            <input id="politica" type="checkbox">
+            <label for="politica">
+              <div class="checked-place" onclick='Checked(this)'>
+              </div>
+              <span>Подтвердите оплату</span>
+              <a class="politica" href="">Условия использования подарочной карты</a>
+            </label>
+            <button class="btn-add_into_bag" type="submit">Добавить в корзину</button>
+          </form>
+        </div>
+      </article>
+    </section>
   </main>
   <footer class="footer">
     <div class="footer-wrapper">
