@@ -1,10 +1,10 @@
 
 /*____MAIN_____*/
 
-.main_wrapper {
+.main_index {
   width: max-content;
   margin: auto;
-  margin-top: 4.3em;
+  margin-top: 5em;
 }
 
 
@@ -16,35 +16,34 @@ div[class^="img"] {
   transition: 1s;
 }
 
-.main_top_block,
-.main_bottom_block {
+.main__top-block,
+.main__bottom-block {
   display: flex;
 }
-.main_img {
+.main-img {
   width: 761px;
   height: 957px;
 }
-.img_bluza {
+.img_shirt {
   background: url(../images/img_index/bluza.jpg);
 }
 .img_bag {
   background: url(../images/img_index/bag.jpg);
 }
-.img_sport_suit {
-  width: 1536px;
-  height: 597px;
+.img_costumes {
+  height: 600px;
   background: url(../images/img_index/sport_kostyum.JPG);
+  background-size: cover;
 }
-.img_futbolka {
+.img_t-shirt {
   background: url(../images/img_index/futbolka.JPG);
 }
 .img_dress {
   background: url(../images/img_index/dress.jpg);
 }
 
-.main_wrapper p {
+.main_index p {
   visibility:hidden;
-
 }
 
 div[class^="img"]:hover  p {
@@ -61,15 +60,15 @@ div[class^="img"]:hover{
   transform: scale(0.95);
 }
 
-#myVideo {
+.main_index__video {
   right: 0;
   bottom: 0;
   height: 869px;
-  opacity: 0.7;
+  opacity: 0.5;
   position: relative;
 }
  
-.wrapper_video {
+.video-wrapper {
   position: relative;
 }
 
@@ -80,7 +79,6 @@ div[class^="img"]:hover{
   transform: translate(-50%,-50%);
   color: white;
   width: 100%;
-  margin:auto;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 2em;
@@ -138,25 +136,4 @@ div[class^="img"]:hover{
     height: 100%;
     background: rgba(51, 51, 51, 0.568);
   }
-}
-
-
-
-
-
-.css-typing {
-  visibility: visible;
-  font-size: 2em;
-  width: 30em;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: type 5s steps(50, end);
-  animation: type 5s infinite steps(50, end);
-}
-@keyframes type{
-    from { width: 0; }
-}
- 
-@-webkit-keyframes type{
-    from { width: 0; }
 }
