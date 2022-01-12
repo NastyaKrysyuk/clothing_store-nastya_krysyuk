@@ -22,6 +22,7 @@
 
 .buyers__image-container>* {
   opacity: 0.8;
+  width: 100%;
 }
 
 .buyers__accordion {
@@ -40,4 +41,13 @@
 .buyers__accordion::after {
   content: url(../images/outline_expand_more_black_48dp.png);
   vertical-align: middle;
+}
+
+@media screen and (max-width: 1100px) {
+  .buyers_display-flex {
+    flex-direction: column;
+  }
+  .buyers__accordion{
+    font-size: 1em;
+  }
 }

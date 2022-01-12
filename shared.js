@@ -15,7 +15,10 @@ function closeSearch() {
   document.getElementById("search").style.height = "0%";
 }
 function openBag() {
-  document.getElementById("bag").style.width = "max-content";
+  if (window.innerWidth > 768) {
+    document.getElementById("bag").style.width = "max-content";
+  }
+  else document.getElementById("bag").style.width = "100%";
 }
 
 function closeBag() {

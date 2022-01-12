@@ -7,7 +7,8 @@
   <title>KOMBINACJA</title>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="./css/shared.css">
-  <link rel="stylesheet" href="./css/style_gift_card.css">
+  <link rel="stylesheet" href="./css/style_clothes.css">
+  <link rel="stylesheet" href="./css/style_price_card.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400&family=M+PLUS+1:wght@200&family=Montserrat:wght@300&family=Raleway:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Shippori+Antique+B1&family=Source+Sans+Pro&display=swap"
@@ -118,52 +119,255 @@
       </div>
     </div>
   </header>
-  <main>
-    <section class="gift-card-wrapper">
-      <img src="./images/IMG_02471111.JPG" alt="">
-      <article class="gift-card__details">
-        <h2 class="gift-card__details-title">ЭЛЕКТРОННЫЙ ПОДАРОЧНЫЙ СЕРТИФИКАТ</h2>
-          <ul class="gift-card__info-list">
-            <li class="info-list__item">
-              Выберите эту опцию,
-              и в указанный вами день и час карта будет отправлена получателю.
-            </li>
-            <li class="info-list__item">
-              Подарочная карта действительна на протяжении
-              трех лет с даты отправки получателю.
-            </li>
-            <li class="info-list__item">
-              После покупки подарочная карта не подлежит возврату в KOMBINACJA.
-            </li>
-          </ul>
-        <div>
-          <form class="gift-card__form" action="">
-            <select name="gift-card_sum" id="gift-card_sum">
-              <option value="50">BYR 50</option>
-              <option value="100">BYR 100</option>
-              <option value="200">BYR 200</option>
-            </select>
-            <input type="text" placeholder="Введите ваше имя">
-            <input type="text" placeholder="Введите сообщение">
-            <input type="date" placeholder="Дата дрставки">
-            <input type="time" placeholder="Время доставки">
-            <p>Данные получателя:</p>
-            <input type="text" placeholder="Введите имя">
-            <input type="email" placeholder="Введите электронную почту">
-            <input type="email" placeholder="Повторите электронную почту">
-            <input type="tel" placeholder="Мобильный телефон">
-            <input id="politica" type="checkbox">
-            <label for="politica">
-              <div class="checked-place" onclick='Checked(this)'>
-              </div>
-              <span>Подтвердите оплату</span>
-              <a class="politica" href="">Условия использования подарочной карты</a>
-            </label>
-            <button class="btn-add_into_bag" type="submit">Добавить в корзину</button>
-          </form>
-        </div>
-      </article>
-    </section>
+  <main class="main_bags">
+    <nav class="nav_left-block">
+      <ul class="nav_left-block__list">
+        <li class="nav_left-block__title">Сумки</li>
+        <li class="tablinks_category" onclick="openContent(event, 'shoppers')" id="defaultOpen">Шопперы</li>
+        <li class="tablinks_category" onclick="openContent(event, 'waist_bags')">Поясные</li>
+      </ul>
+    </nav>
+    <section class="category__wrapper">
+      <div id="shoppers" class="tabcontent_category">
+        <article class="product-card">
+          <div class="product-card__container">
+            <img src="./images/img_clothes/bag/bag1.jpg">
+            <section class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="overlay-block__list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </section>
+          </div>
+          <section class="product-card__content">
+            <div class="product-card__name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product-card__price">
+              BYR 50
+            </div>
+            <div class="icons_aligin-right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </section>
+        </article>
+        <article class="product-card">
+          <div class="product-card__container">
+            <img src="./images/img_clothes/bag/bag2.jpg">
+            <section class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </section>
+          </div>
+          <section class="product-card__content">
+            <div class="product-card__name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product-card__price">
+              BYR 50
+            </div>
+            <div class="icons_aligin-right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </section>
+        </article>
+        <article class="product-card">
+          <div class="product-card__container">
+            <img src="./images/img_clothes/bag/bag3.jpg">
+            <section class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </section>
+          </div>
+          <section class="product-card__content">
+            <div class="product-card__name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product-card__price">
+              BYR 50
+            </div>
+            <div class="icons_aligin-right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </section>
+        </article>
+        <article class="product-card">
+          <div class="product-card__container">
+            <img src="./images/img_clothes/bag/bag4.jpg">
+            <section class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </section>
+          </div>
+          <section class="product-card__content">
+            <div class="product-card__name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product-card__price">
+              BYR 50
+            </div>
+            <div class="icons_aligin-right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </section>
+        </article>
+        <article class="product-card">
+          <div class="product-card__container">
+            <img src="./images/img_clothes/bag/bag5.jpg">
+            <section class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </section>
+          </div>
+          <section class="product-card__content">
+            <div class="product-card__name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product-card__price">
+              BYR 50
+            </div>
+            <div class="icons_aligin-right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </section>
+        </article>
+        <article class="product-card">
+          <div class="product-card__container">
+            <img src="./images/img_clothes/bag/bag6.jpg">
+            <section class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </section>
+          </div>
+          <section class="product-card__content">
+            <div class="product-card__name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product-card__price">
+              BYR 50
+            </div>
+            <div class="icons_aligin-right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+
+          </section>
+        </article>
+      </div>
+      <div id="waist_bags" class="tabcontent_category">
+        <article class="product-card">
+          <div class="product-card__container">
+            <img src="./images/img_clothes/bag_1/bag1.jpg">
+            <section class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </section>
+          </div>
+          <section class="product-card__content">
+            <div class="product-card__name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product-card__price">
+              BYR 50
+            </div>
+            <div class="icons_aligin-right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </section>
+        </article>
+        <article class="product-card">
+          <div class="product-card__container">
+            <img src="./images/img_clothes/bag_1/bag2.JPG">
+            <section class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </section>
+          </div>
+          <section class="product-card__content">
+            <div class="product-card__name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product-card__price">
+              BYR 50
+            </div>
+            <div class="icons_aligin-right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </section>
+        </article>
+        <article class="product-card">
+          <div class="product-card__container">
+            <img src="./images/img_clothes/bag_1/bag3.jpg">
+            <section class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </section>
+          </div>
+          <section class="product-card__content">
+            <div class="product-card__name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product-card__price">
+              BYR 50
+            </div>
+            <div class="icons_aligin-right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </section>
+        </article>
+        <article class="product-card">
+          <div class="product-card__container">
+            <img src="./images/img_clothes/bag_1/bag4.JPG">
+            <section class="overlay-block">
+              <button class="button-add_into_bag">Добавить в корзину</button>
+              <ul class="list-size">
+                <li class="list-size__item" onclick="return ChangeSize(this);">S</li>
+                <li class="list-size__item" onclick="return ChangeSize(this);">М</li>
+              </ul>
+            </section>
+          </div>
+          <section class="product-card__content">
+            <div class="product-card__name">
+              <p>Укороченная футболка</p>
+            </div>
+            <div class="product-card__price">
+              BYR 50
+            </div>
+            <div class="icons_aligin-right"><span class="material-icons" onclick="return ChangeColor(this);">
+                favorite
+              </span></div>
+          </section>
+        </article>
+      </div>
   </main>
   <footer class="footer">
     <div class="footer-wrapper">
@@ -265,6 +469,6 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="skroll.js"></script>
   <script src="shared.js"></script>
+  <script src="clothes.js"></script>
 </body>
-
 </html>

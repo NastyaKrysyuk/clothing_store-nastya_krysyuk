@@ -2,8 +2,12 @@
   position: relative;
 }
 
+.main-about{
+  overflow-x: hidden;
+}
+
 .content {
-  width: 1320px;
+  width: 80%;
   height: 680px;
   position: absolute;
   top: 32%;
@@ -40,20 +44,16 @@
   list-style: circle;
   color: rgba(239, 219, 170, 0.616);
   text-transform: uppercase;
-  font-size: 9em;
+  font-size: 9rem;
   font-weight: 900;
 }
 
 
 .concept {
   position: absolute;
-  right: 3.3em;
-  top: 803px;
+  right: 2%;
+  top: 80%;
 
-}
-
-.concept {
-  width: max-content;
 }
 
 
@@ -267,4 +267,60 @@
 .social__text,
 .social-icons__list {
   margin-top: 1em;
+}
+
+@media screen and (max-width : 1490px) {
+  .gallery__title {
+    display: block;
+    margin-right:0;
+  }
+}
+
+@media screen and (max-width : 1120px){
+  .concept__list-item,
+  .gallery__title {
+    font-size: 7em;
+  }
+  .content__logo {
+    left: 50%;
+
+  }
+  .content {
+    background-color: rgba(255, 255, 255, 0.685);
+  }
+  .content__text {
+    width: 100%;
+   text-align: center;
+    font-weight: bold;
+    margin-bottom: 7rem;
+  }
+  .social__content-wrapper{
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@media screen and (max-width : 900px){
+  .concept__list-item,
+  .gallery__title {
+    font-size: 11vw;
+  }
+  .about-wrapper>img {
+    height: 874px;
+  }
+  .concept { 
+    right: 9%;
+    top: 70%;
+}
+}
+
+@media screen and (max-width : 700px){
+ .content__logo img {
+    width: 70%;
+    position: relative;
+    left: 17%;
+ }
 }
