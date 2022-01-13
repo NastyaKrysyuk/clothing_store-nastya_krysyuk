@@ -21,6 +21,8 @@ ul {
 }
 
 /*____header___*/
+
+
 .main-header {
   width: 100%;
   height: 77px;
@@ -36,6 +38,59 @@ ul {
   align-items: center;
   font-size: 0.75rem;
 }
+
+
+/*___mobile-menu___*/
+
+.main-header__mobile-menu{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.76);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.main-header__mobile-menu .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 5rem;
+  margin-left: 0.2rem;
+  color: #818181;
+  transition: all 0.5s;
+}
+
+.mobile-menu-list a{
+  color: white;
+}
+
+.mobile-menu-list{
+  font-size: 1.3rem;
+  width: 75%;
+  margin: auto;
+}
+.mobile-submenu{
+  margin: 1em;
+  display: none;
+  overflow: hidden;
+}
+
+.mobile-submenu a{
+  border-left: 1px solid white;
+  font-size: 0.8em;
+}
+.active, .accordion:hover {
+  text-decoration:underline; 
+}
+
+
+
+
+
 
 /* .main-header>* {
   flex: 1 100%;
@@ -328,7 +383,7 @@ input:focus {
   position: absolute;
   top: 0;
   left: 0;
-  font-size: 3em;
+  font-size: 5em;
   margin-left: 0.2rem;
   color: #818181;
   transition: all 0.5s;

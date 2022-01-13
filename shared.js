@@ -25,6 +25,14 @@ function closeBag() {
   document.getElementById("bag").style.width = "0";
 }
 
+function openMobileMenu() {
+  document.getElementById("mobile-menu").style.width = "100%";
+}
+
+function closeMobileMenu() {
+  document.getElementById("mobile-menu").style.width = "0";
+}
+
 function openContentBag(evt, content_bag) {
   var i, tabcontent, tablinks
   tabcontent = document.getElementsByClassName("bag__content");
