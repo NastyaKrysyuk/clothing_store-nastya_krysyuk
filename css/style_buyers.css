@@ -1,3 +1,5 @@
+@import url(root_colors.css);
+
 .buyers-wrapper{
   margin-top: 5rem;
 }
@@ -8,7 +10,7 @@
  margin-bottom: 5em;
   padding: 3em 2em 5em 2em;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.651) ; 
+  background-color: var(--transparent-white) ; 
 }
 .buyers_display-flex > * {
   flex: 1 100%;
@@ -17,7 +19,7 @@
 .buyers__info > * {
   line-height: 1.5rem;
   margin-bottom: 2em;
-  border-bottom:0.016em solid rgba(151, 148, 148, 0.678);
+  border-bottom:0.016em solid var(--transparent-gray);
 }
 
 .buyers__image-container>* {
@@ -30,12 +32,12 @@
    text-transform: uppercase;
   cursor: pointer;
   padding: 1em;
-  background-color: rgba(255, 255, 255, 0.404) ;
+  background-color: var(--transparent-gray) ;
   transition: all 0.4s;
 }
 
 .active, .buyers__accordion:hover {
-  background-color:  rgba(255, 255, 255, 0.555) ;
+  background-color:  var(--transparent-white) ;
 }
 
 .buyers__accordion::after {

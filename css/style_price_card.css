@@ -1,5 +1,7 @@
+@import url(root_colors.css);
+
 .product-card {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: var(--product-card-bg-color);
   padding: 0.7em;
   display: inline-block;
   margin-bottom: 0.3em;
@@ -21,20 +23,20 @@
   margin-top: 0.3em;
 }
 
-.toggle-heart {
+/* .toggle-heart {
   position: absolute;
   right: 0;
   bottom: 0;
   cursor: pointer;
   color: aliceblue;
-}
-.class1 {
+} */
+/* .class1 {
   position: absolute;
   right: 0 ;
   bottom: 0 ;
   cursor: pointer;
   
-}
+} */
 
 .product-card__container {
   position: relative;
@@ -48,7 +50,7 @@
   height: 40%;
   width: 100%;
   transition: 0.5s ease;
-  background-color: rgba(128, 128, 128, 0.664);
+  background-color: var(--overlay-bg-color);
   text-align: center;
 }
 
@@ -62,19 +64,19 @@
   padding: 0.8em;
   top: 50%;
   cursor: pointer;
-  background:rgba(255, 255, 255, 0.616) ;
+  background:var(--transparent-white) ;
   transition: 0.4s;
 }
 
 .button-add_into_bag:hover {
-  background-color: rgb(239,219,170,0.75);
+  background-color: var(--transparent-yellow);
 }
 
 .list-size__item {
   display: inline-block;
   margin-right: 1em;
   width: 3em;
-  background-color: rgba(255, 255, 255, 0.616);
+  background-color: var(--transparent-white) ;
   font-weight: bold;
   cursor: pointer;
 }

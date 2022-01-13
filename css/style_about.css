@@ -1,3 +1,5 @@
+@import url(root_colors.css);
+
 .about-wrapper{
   position: relative;
 }
@@ -13,7 +15,7 @@
   top: 32%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.507);
+  background-color: var( --transparent-white);
 }
 
 .content__logo {
@@ -42,7 +44,7 @@
 
 .concept__list-item {
   list-style: circle;
-  color: rgba(239, 219, 170, 0.616);
+  color: var( --transparent-yellow);
   text-transform: uppercase;
   font-size: 9rem;
   font-weight: 900;
@@ -75,7 +77,7 @@
 /*gallary*/
 
 .gallery__title {
-  color: rgba(239, 219, 170, 0.616);
+  color: var( --transparent-yellow);
   text-transform: uppercase;
   font-size: 9em;
   font-weight: 900;
@@ -84,7 +86,7 @@
 
 
 .gallery {
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: var(--transparent-gray);
   text-align: center;
   margin: 5em 0;
   padding: 2.9em 0;
@@ -116,7 +118,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgb(239, 219, 170);
+  background: var( --transparent-yellow);
   opacity: 0;
   -webkit-transition: all 450ms ease-out;
   -o-transition: all 450ms ease-out;
@@ -166,7 +168,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.63);
+  background: var(--overlay-bg-color);
   display: none;
 }
 
@@ -212,7 +214,7 @@
   width: 40px;
   height: 40px;
   line-height: 40px;
-  background: #ffffff71;
+  background: var(--transparent-black);
   color: white;
 }
 .close:after {
@@ -255,7 +257,7 @@
   left: 15%;
   transform: translate(-50%, -50%);
   max-width: 25%;
-  background-color: rgba(239, 219, 170, 0.616);
+  background-color: var(--transparent-yellow);
   padding: 1em;
 }
 
@@ -286,7 +288,7 @@
 
   }
   .content {
-    background-color: rgba(255, 255, 255, 0.685);
+    background-color: var(--transparent-white);
   }
   .content__text {
     width: 100%;

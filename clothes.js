@@ -1,3 +1,7 @@
+//получаем тип одежды из кваери параметров адресной строки
+//которые туда попадают при клике по ссылке выпадающего меню в хедер меню на индекс странице
+const clothesType = window.location.href.split('=')[1]
+
 function openContent(evt, content_clothes) {
   var i, tabcontent, tablinks
   tabcontent = document.getElementsByClassName("tabcontent_category");
@@ -9,8 +13,16 @@ function openContent(evt, content_clothes) {
       tablinks[i].className = tablinks[i].className.replace(" active_category", "");
   }
   document.getElementById(content_clothes).style.display = "block";
-  evt.currentTarget.className += " active_category";
+
+  if (evt) {
+      //добавляем класс когда функция вызвана по клику сайд меню
+      evt.currentTarget.className += " active_category";
+  } else {
+      //добавляем класс когда функция вызвана при переходе с главное из хедер меню
+      document.getElementById(`${clothesType}-sidebar`).className += " active_category"
+  }
 }
+openContent(null,clothesType)
 
 function ChangeColor(Element) {
 	if (Element.style.color == '') Element.style.color = 'rgb(184, 89, 89)';

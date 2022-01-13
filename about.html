@@ -57,22 +57,46 @@
 
   <header class="main-header">
     <div class="logo">
-      <span class="material-icons">
+      <span class="material-icons"  onclick="openMobileMenu()">
         menu
         </span>
       <a href="index.html">
         <img src="./images/3_kombinacja_лого_черн.OULWl.png">
       </a>
     </div>
+    <section id="mobile-menu" class="main-header__mobile-menu">
+      <a href="javascript:void(0)" class="btn-close" onclick="closeMobileMenu()">×</a>
+      <nav class="mobile-menu_wrapper">
+            <ul class="mobile-menu-list">
+              <li><a href="javascript:void(0)" class="accordion">Одежда <span>+</span></a>
+                <ul class="mobile-submenu">
+                  <li><a href="clothes.html?type=t-shirt">Футболки/Лонгсливы</a></li>
+                  <li><a href="clothes.html?type=shirts">Рубашки</a></li>
+                  <li><a href="clothes.html?type=dress">Платья</a></li>
+                  <li><a href="clothes.html?type=costumes">Спортивные костюмы</a></li>
+                </ul>
+              </li>
+              <li ><a href="javascript:void(0)"class="accordion">Сумки<span>+</span></a>
+                <ul class="mobile-submenu">
+                  <li><a href="bags.html?type=shoppers">Шопперы</a></li>
+                  <li><a href="bags.html?type=waist_bags">Поясные</a></li>
+                </ul>
+              </li>
+              <li><a href="gift_card.html">Подарочная карта</a></li>
+              <li><a href="buyers.html">Покупателям</a></li>
+              <li><a href="about.html">О нас</a></li>
+            </ul>
+      </nav>
+    </section>
     <section class="main-header__menu">
       <ul class="menu-list">
-        <li class="clothes menu-list__item"><a href="">Одежда</a>
+        <li class="clothes menu-list__item"><a href="clothes.html?type=t-shirt">Одежда</a>
           <div class="hidden-block">
             <ul class="hidden-block__submenu">
-              <li><a href="./clothes.html">Футболки/Лонгсливы</a></li>
-              <li><a href="">Рубашки</a></li>
-              <li><a href="">Платья</a></li>
-              <li><a href="">Спортивные костюмы</a></li>
+              <li><a href="clothes.html?type=t-shirt">Футболки/Лонгсливы</a></li>
+              <li><a href="clothes.html?type=shirts">Рубашки</a></li>
+              <li><a href="clothes.html?type=dress">Платья</a></li>
+              <li><a href="clothes.html?type=costumes">Спортивные костюмы</a></li>
             </ul>
             <div class="hidden-block__img-wrapper">
               <img src="./images/clothes.jpg">
@@ -81,12 +105,11 @@
             </div>
           </div>
         </li>
-        <li class="bags menu-list__item"><a href="">Сумки</a>
+        <li class="bags menu-list__item"><a href="bags.html?type=shoppers">Сумки</a>
           <div class="hidden-block">
             <ul class="hidden-block__submenu">
-              <li><a href="">Шопперы</a></li>
-              <li><a href="">Поясные</a></li>
-              <li><a href="">Для ноутбука</a></li>
+              <li><a href="bags.html?type=shoppers">Шопперы</a></li>
+              <li><a href="bags.html?type=waist_bags">Поясные</a></li>
             </ul>
             <div class="hidden-block__img-wrapper">
               <img src="./images/bag.jpg">
@@ -95,9 +118,9 @@
             </div>
           </div>
         </li>
-        <li class="gift-card"><a href="">Подарочная карта</a></li>
-        <li class="buyers"><a href="">Покупателям</a></li>
-        <li class="about"><a href="">О нас</a></li>
+        <li class="gift-card"><a href="gift_card.html">Подарочная карта</a></li>
+        <li class="buyers"><a href="buyers.html">Покупателям</a></li>
+        <li class="about"><a href="about.html">О нас</a></li>
       </ul>
     </section>
 
@@ -180,7 +203,7 @@
           <div class="social__text">Поделитесь и вы с нами вашими мыслями:</div>
           <div class="social-icons__list">
             <ul>
-              <li class="social-icons"><a href="">
+              <li class="social-icons"><a href="https://www.instagram.com/kombinacja.by/">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                     style=" fill:rgb(170,170,168) ;">
                     <path
@@ -188,7 +211,7 @@
                     </path>
                   </svg>
                 </a></li>
-              <li class="social-icons"><a href="">
+              <li class="social-icons"><a href="https://www.instagram.com/kombinacja.by/">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                     style=" fill:rgb(170,170,168);">
                     <path
@@ -196,7 +219,7 @@
                     </path>
                   </svg>
                 </a></li>
-              <li class="social-icons "><a href="">
+              <li class="social-icons "><a href="https://www.instagram.com/kombinacja.by/">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                     style=" fill:rgb(170,170,168);">
                     <path
@@ -241,7 +264,7 @@
           </li>
           <li>
             <ul>
-              <li class="social-icons"><a href="">
+              <li class="social-icons"><a href="https://www.instagram.com/kombinacja.by/">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                     style=" fill:rgb(170,170,168) ;">
                     <path
@@ -249,7 +272,7 @@
                     </path>
                   </svg>
                 </a></li>
-              <li class="social-icons"><a href="">
+              <li class="social-icons"><a href="https://www.instagram.com/kombinacja.by/">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                     style=" fill:rgb(170,170,168);">
                     <path
@@ -257,7 +280,7 @@
                     </path>
                   </svg>
                 </a></li>
-              <li class="social-icons "><a href="">
+              <li class="social-icons "><a href="https://www.instagram.com/kombinacja.by/">
                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                     style=" fill:rgb(170,170,168);">
                     <path
@@ -273,18 +296,18 @@
       <div class="footer__consumer">
         <h3 class="header">Покупателям</h3>
         <ul class="footer__consumer-list">
-          <li><a href="">Доставка и оплата</a></li>
-          <li><a href="">Возврат и обмен</a></li>
-          <li><a href="">Уход за одеждой</a></li>
+          <li><a href="buyers.html">Доставка и оплата</a></li>
+          <li><a href="buyers.html">Возврат и обмен</a></li>
+          <li><a href="buyers.html">Уход за одеждой</a></li>
         </ul>
       </div>
       <div class="footer__navigation">
         <h3 class="header">Навигация</h3>
         <ul class="footer__navigation-list">
-          <li><a href="">Одежда</a></li>
-          <li><a href="">Сумки</a></li>
-          <li><a href="">Подарочная карта</a></li>
-          <li><a href="">О нас</a></li>
+          <li><a href="clothes.html">Одежда</a></li>
+          <li><a href="bags.html">Сумки</a></li>
+          <li><a href="gift_card.html">Подарочная карта</a></li>
+          <li><a href="about.html">О нас</a></li>
         </ul>
       </div>
       <div class="footer__newsletter">
@@ -313,6 +336,7 @@
   <script src="./skroll.js"></script>
   <script src="shared.js"></script>
   <script src="clothes.js"></script>
+  <script src="mobile-menu.js"></script>
 
 </body>
 
