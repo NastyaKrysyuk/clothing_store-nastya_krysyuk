@@ -71,6 +71,9 @@ input[type="checkbox"] {
   background-color: var(--transparent-yellow);
 }
 
+
+
+
 @media screen and (max-width: 1100px){
   .gift-card-wrapper img {
     display: none;
@@ -86,3 +89,20 @@ input[type="checkbox"] {
   }
 }
 
+
+
+/*validation*/
+input[type=text]:invalid {
+  border-color:var(--invalid-value);
+}
+
+.error {
+    padding: 0;
+    color: var(--transparent-black);
+    background-color: var(--invalid-value);
+    border-radius: 0 0 5px 5px; 
+}
+
+.error.active-error {
+  padding: 0.3em;
+}

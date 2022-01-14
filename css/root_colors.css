@@ -4,6 +4,7 @@
  --transparent-yellow:rgba(239, 219, 170, 0.918);
  --transparent-gray:rgba(160, 160, 160, 0.5);
  --button-bg-color:#818181;
+ --invalid-value:rgba(255, 0, 0, 0.123);
  --material-icons-bg-color:rgba(128, 128, 128, 0.479);
  --product-card-bg-color:rgba(255, 255, 255, 0.5);
  --overlay-bg-color:rgba(128, 128, 128, 0.664);

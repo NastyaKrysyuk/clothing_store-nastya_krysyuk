@@ -1,0 +1,13 @@
+.modal {
+  background-color: gray;
+  text-align: center;
+  display: none;
+/* animation: transparent 2s ease-in; */
+/* animation-fill-mode: forwards; */
+}
+
+@keyframes transparent {
+to {
+  opacity: 0;
+}
+}

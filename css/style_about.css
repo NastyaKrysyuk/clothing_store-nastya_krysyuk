@@ -14,8 +14,8 @@
   position: absolute;
   top: 32%;
   left: 50%;
-  transform: translate(-50%, -50%);
   background-color: var( --transparent-white);
+  transform: translate(-50%, -50%);
 }
 
 .content__logo {
@@ -135,9 +135,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 
@@ -146,13 +146,13 @@
 }
 
 .hover-buttons {
+  display: none;
   position: absolute;
+  margin: auto;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  margin: auto;
-  display: none;
 }
 
 .image-container:hover .hover-buttons {
@@ -163,13 +163,13 @@
 
 /*overlay*/
 .overlay {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background: var(--overlay-bg-color);
-  display: none;
 }
 
 .overlay.active {
@@ -178,6 +178,7 @@
 }
 
 .open-img {
+  display: none;
   position: fixed;
   width: 100%;
   max-width: 1170px;
@@ -191,7 +192,6 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   box-shadow: 0 3px 10px rgba(255, 255, 255, 0.8);
-  display: none;
   z-index: 11;
 }
 .open-img.active {
