@@ -1,5 +1,10 @@
 @import url(root_colors.css);
 
+:root {
+  --button-bg-color:var(--bluish-gray);
+  --material-icons-bg-color:var(--bluish-gray);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +42,7 @@ ul {
   box-shadow: 7px 9px 13px -7px #00000024, 5px 5px 15px 5px rgba(0, 0, 0, 0.24);
   align-items: center;
   font-size: 0.75rem;
-  z-index: 10;
+  z-index: 100;
 }
 
 
@@ -282,6 +287,11 @@ input:focus {
 
 .hidden-block__img-wrapper {
   display: inline-block;
+  width: 45%;
+}
+
+.hidden-block__img-wrapper>* {
+  width: 32%;
 }
 /*search*/
 
@@ -465,7 +475,7 @@ input:focus {
   cursor: pointer;
   display: none;
   font-family: monospace;
-  z-index: 9;
+  z-index: 90;
 }
 
 .main-header__progress-bar{
@@ -492,7 +502,7 @@ input:focus {
     margin: 0;
   }
 }
-@media screen and (max-width : 820px) {
+@media screen and (max-width : 850px) {
  .menu-list {
    display: none;
    margin-top: 4em;

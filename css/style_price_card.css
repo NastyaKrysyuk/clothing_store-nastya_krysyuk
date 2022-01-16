@@ -1,14 +1,19 @@
 @import url(root_colors.css);
 
-.product-card {
-  background-color: var(--product-card-bg-color);
-  padding: 0.7em;
-  display: inline-block;
-  margin-bottom: 0.3em;
-  max-width: 33%;
+:root{
+  --product-card-bg-color:var(--light-gray);
+  --overlay-bg-color:var(--tin);
 }
 
-.product-card__container img{
+.product-card {
+  display: inline-block;
+  padding: 0.7em;
+  margin-bottom: 0.3em;
+  max-width: 33%;
+  background-color: var(--product-card-bg-color);
+}
+
+.product-card__container img {
   width: 100%;
 }
 
@@ -18,40 +23,26 @@
 }
 
 .product-card__price {
+  margin-top: 0.3em;
   font-weight: bold;
   font-size: 0.8em;
-  margin-top: 0.3em;
 }
 
-/* .toggle-heart {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  cursor: pointer;
-  color: aliceblue;
-} */
-/* .class1 {
-  position: absolute;
-  right: 0 ;
-  bottom: 0 ;
-  cursor: pointer;
-  
-} */
 
 .product-card__container {
   position: relative;
 }
 
 .overlay-block {
-  opacity: 0;
   position: absolute;
   bottom: 0;
   left: 0;
   height: 40%;
   width: 100%;
-  transition: 0.5s ease;
   background-color: var(--overlay-bg-color);
   text-align: center;
+  transition: 0.5s ease;
+  opacity: 0;
 }
 
 .product-card__container:hover .overlay-block {
@@ -59,13 +50,13 @@
 }
 
 .button-add_into_bag {
-  border:none;
   position: relative;
   padding: 0.8em;
   top: 50%;
-  cursor: pointer;
-  background:var(--transparent-white) ;
+  border: none;
+  background: var(--transparent-white);
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .button-add_into_bag:hover {
@@ -76,33 +67,16 @@
   display: inline-block;
   margin-right: 1em;
   width: 3em;
-  background-color: var(--transparent-white) ;
+  background-color: var(--transparent-white);
   font-weight: bold;
   cursor: pointer;
 }
+
 .icons_aligin-right {
   text-align: right;
   cursor: pointer;
 }
- 
 
-.css-typing
-{
-  font-size: 2em;
-    width: 30em;
-    white-space:nowrap;
-    overflow:hidden;
-    -webkit-animation: type 5s steps(50, end);
-    animation: type 5s infinite steps(50, end);
-}
- 
-@keyframes type{
-    from { width: 0; }
-}
- 
-@-webkit-keyframes type{
-    from { width: 0; }
-}
 
 @media screen and (max-width : 1350px) {
   .product-card {
@@ -112,7 +86,7 @@
 
 @media screen and (max-width : 1000px) {
   .tablinks_category {
-  font-size: 0.8em;
+    font-size: 0.8em;
   }
 }
 
@@ -120,13 +94,14 @@
   .nav_left-block {
     display: none;
   }
+
   .category__wrapper {
     width: 100%;
   }
 
 }
 
-@media screen and (max-width : 500px){
+@media screen and (max-width : 500px) {
   .product-card {
     max-width: 100%;
   }

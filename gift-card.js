@@ -1,14 +1,13 @@
 
-// Существуют разные способы получить DOM-узел; здесь мы определяем саму форму и
-// поле ввода email и элемент span, в который поместим сообщение об ошибке
-const form  = document.getElementsByTagName('form')[0];
+// определяем саму форму и поле ввода email и элемент span, 
+// в который поместим сообщение об ошибке
+const form = document.getElementsByTagName('form')[0];
 
 const email = document.getElementById('mail');
 const emailError = document.querySelector('#mail + span.error');
 
 email.addEventListener('input', function (event) {
-  // Каждый раз, когда пользователь что-то вводит,
-  // мы проверяем, являются ли поля формы валидными
+  //Проверка на валидность при вводе в инпут
 
   if (email.validity.valid) {
     // Если на момент валидации какое-то сообщение об ошибке уже отображается,
@@ -23,8 +22,7 @@ email.addEventListener('input', function (event) {
 
 form.addEventListener('submit', function (event) {
   // Если поле email валдно, позволяем форме отправляться
-
-  if(!email.validity.valid) {
+  if (!email.validity.valid) {
     // Если поле email не валидно, отображаем соответствующее сообщение об ошибке
     showError();
     // Затем предотвращаем стандартное событие отправки формы
@@ -33,20 +31,23 @@ form.addEventListener('submit', function (event) {
 });
 
 function showError() {
-  if(email.validity.valueMissing) {
-    // Если поле пустое,
-    // отображаем следующее сообщение об ошибке
-    emailError.textContent = 'Адресс получателя не может быть пустым';
-  } else if(email.validity.typeMismatch) {
-    // Если поле содержит не email-адрес,
-    // отображаем следующее сообщение об ошибке
+  if (email.validity.valueMissing) {
+    // Если поле пустое
+    emailError.textContent = 'Адрес получателя не может быть пустым';
+  } else if (email.validity.typeMismatch) {
+    // Если поле содержит не email-адрес
     emailError.textContent = 'Неверный e-mail адрес';
-  } else if(email.validity.tooShort) {
-    // Если содержимое слишком короткое,
-    // отображаем следующее сообщение об ошибке
-    emailError.textContent = `Электронная почта должна содержать не менее  ${ email.minLength } символов; вы ввели ${ email.value.length }.`;
+  } else if (email.validity.tooShort) {
+    // Если содержимое слишком короткое
+    emailError.textContent = `Электронная почта должна содержать не менее  ${email.minLength} символов; вы ввели ${email.value.length}.`;
   }
 
   // Задаём соответствующую стилизацию
   emailError.className = 'error active-error';
+}
+
+function Checked(Element) {
+  if (Element.innerHTML == '') Element.innerHTML = '&#10004';
+  else Element.innerHTML = '';
+  return false;
 }

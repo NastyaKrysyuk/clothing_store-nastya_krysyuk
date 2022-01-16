@@ -1,36 +1,41 @@
 @import url(root_colors.css);
 
-.gift-card-wrapper{
- margin: 5rem auto;
- width: 100%;
- background-color: var(--transparent-white);
- padding: 3em;
+:root {
+  --invalid-value:var(--transparent-red);
+}
+
+.gift-card-wrapper {
+  margin: 5rem auto;
+  padding: 3em;
+  width: 100%;
+  background-color: var(--transparent-white);
 }
 
 .gift-card__details {
   display: inline-block;
-  vertical-align: top;
   width: 40%;
   margin-left: 2em;
-  
+  vertical-align: top;
+
 }
 
-.gift-card__info-list{
-  margin:2em 0;
+.gift-card__info-list {
+  margin: 2em 0;
 }
 
 .info-list__item {
   list-style-type: disc;
   line-height: 1.5em;
 }
+
 .gift-card__form>* {
   display: block;
+  width: 80%;
   margin-bottom: 1.2em;
+  padding-bottom: 1.2em;
   border-width: 0 0 1px;
   border-color: gray;
-  width: 80%;
   background-color: inherit;
-  padding-bottom:1.2em;
   font-size: 1rem;
 }
 
@@ -46,8 +51,8 @@ input[type="checkbox"] {
 
 .checked-place {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 1em;
+  height: 1em;
   background: gray;
   text-align: center;
 }
@@ -55,54 +60,51 @@ input[type="checkbox"] {
 
 .gift-card-wrapper img {
   width: 40%;
- }  
- 
+}
+
 .btn-add_into_bag {
-  border: none;
   position: relative;
   padding: 0.8em;
   top: 50%;
-  cursor: pointer;
-  background: var( --transparent-white);
+  border: none;
+  background: var(--transparent-white);
   transition: 0.4s;
+  cursor: pointer;
 }
 
 .btn-add_into_bag:hover {
   background-color: var(--transparent-yellow);
 }
 
-
-
-
-@media screen and (max-width: 1100px){
-  .gift-card-wrapper img {
-    display: none;
-  }
-  .gift-card__details {
-    width: 100%;
-  }
-}
-@media screen and (max-width: 400px)
-{
-  .gift-card__form>* {
-    font-size: 0.8em;
-  }
-}
-
-
-
 /*validation*/
 input[type=text]:invalid {
-  border-color:var(--invalid-value);
+  border-color: var(--invalid-value);
 }
 
 .error {
-    padding: 0;
-    color: var(--transparent-black);
-    background-color: var(--invalid-value);
-    border-radius: 0 0 5px 5px; 
+  padding: 0;
+  color: var(--transparent-black);
+  background-color: var(--invalid-value);
+  border-radius: 0 0 5px 5px;
 }
 
 .error.active-error {
   padding: 0.3em;
+}
+
+
+@media screen and (max-width: 1100px) {
+  .gift-card-wrapper img {
+    display: none;
+  }
+
+  .gift-card__details {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gift-card__form>* {
+    font-size: 0.8em;
+  }
 }

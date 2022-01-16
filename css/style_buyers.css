@@ -1,43 +1,44 @@
 @import url(root_colors.css);
 
-.buyers-wrapper{
-  margin-top: 5rem;
+main {
+  margin-top: 5em;
 }
 
-.buyers_display-flex {
-  display:none;
+.buyers-wrapper {
+  display: none;
   align-items: center;
- margin-bottom: 5em;
+  margin-bottom: 5em;
   padding: 3em 2em 5em 2em;
+  background-color: var(--transparent-white);
   text-align: center;
-  background-color: var(--transparent-white) ; 
 }
-.buyers_display-flex > * {
-  flex: 1 100%;
-} 
 
-.buyers__info > * {
-  line-height: 1.5rem;
+.buyers-wrapper>* {
+  flex: 1 100%;
+}
+
+.buyers__info>* {
   margin-bottom: 2em;
-  border-bottom:0.016em solid var(--transparent-gray);
+  border-bottom: 0.016em solid var(--transparent-gray);
+  line-height: 1.5rem;
 }
 
 .buyers__image-container>* {
-  opacity: 0.8;
   width: 100%;
+  opacity: 0.8;
 }
 
 .buyers__accordion {
-  text-align: center;
-   text-transform: uppercase;
-  cursor: pointer;
   padding: 1em;
-  background-color: var(--transparent-gray) ;
+  background-color: var(--transparent-gray);
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
   transition: all 0.4s;
 }
 
 .active, .buyers__accordion:hover {
-  background-color:  var(--transparent-white) ;
+  background-color: var(--transparent-white);
 }
 
 .buyers__accordion::after {
@@ -46,10 +47,11 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .buyers_display-flex {
+  .buyers-wrapper {
     flex-direction: column;
   }
-  .buyers__accordion{
+
+  .buyers__accordion {
     font-size: 1em;
   }
 }

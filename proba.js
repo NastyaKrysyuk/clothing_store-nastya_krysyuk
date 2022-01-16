@@ -1,5 +1,9 @@
-var btn = document.getElementById("click");
-var modal = document.getElementById('modal');
-btn.onclick = setTimeout(function() {
- modal.style.display = "block";
-},2000) 
+const btn=document.querySelector('.btn-toTop');
+window.addEventListener('scroll',toTop)
+function toTop() {
+  if(window.scrollY > 300) {
+    btn.classList.add('active')
+} else {
+    btn.classList.remove('active')
+}
+}
