@@ -16,7 +16,6 @@
   width: 40%;
   margin-left: 2em;
   vertical-align: top;
-
 }
 
 .gift-card__info-list {
@@ -28,7 +27,7 @@
   line-height: 1.5em;
 }
 
-.gift-card__form>* {
+.gift-card__form > * {
   display: block;
   width: 80%;
   margin-bottom: 1.2em;
@@ -39,7 +38,7 @@
   font-size: 1rem;
 }
 
-.gift-card__form>*:focus {
+.gift-card__form > *:focus {
   outline-style: none;
   background-color: var(--transparent-gray);
 }
@@ -56,7 +55,6 @@ input[type="checkbox"] {
   background: gray;
   text-align: center;
 }
-
 
 .gift-card-wrapper img {
   width: 40%;
@@ -77,6 +75,7 @@ input[type="checkbox"] {
 }
 
 /*validation*/
+
 input[type=text]:invalid {
   border-color: var(--invalid-value);
 }
@@ -92,7 +91,6 @@ input[type=text]:invalid {
   padding: 0.3em;
 }
 
-
 @media screen and (max-width: 1100px) {
   .gift-card-wrapper img {
     display: none;
@@ -104,7 +102,7 @@ input[type=text]:invalid {
 }
 
 @media screen and (max-width: 400px) {
-  .gift-card__form>* {
+  .gift-card__form > * {
     font-size: 0.8em;
   }
 }

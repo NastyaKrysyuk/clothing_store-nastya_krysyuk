@@ -4,8 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="KOMBINACJA">
+  <meta property="og:site_name" content="kombinacja.by">
+  <meta property="og:url" content="index.html">
+  <meta property="og:description" content="Бренд дизайнерской одежды для людей в гармонии с собой и миром вокруг.">
+  <meta property="og:image" content="./images/for_open-graph.jpg">
   <title>KOMBINACJA</title>
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="./favicon/favicon.ico">
   <link rel="stylesheet" href="./css/shared.css">
   <link rel="stylesheet" href="./css/style_buyers.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,9 +26,7 @@
   <div class="btn-toTop" id="toTop"></div>
   <div id="search" class="search">
     <a role="button" href="javascript:void(0)" class="btn-close" onclick="closeSearch()">×</a>
-    <div class="search-wrapper">
       <input class="search__input" type="search" placeholder="Введите поисковой запрос">
-    </div>
   </div>
   <div id="bag" class="bag">
     <a href="javascript:void(0)" class="btn-close" onclick="closeBag()">×</a>
@@ -42,13 +45,13 @@
           Избранное(0)
         </li>
       </ul>
-      <div id="my-bag" class="bag__content" id="defaultOpen">
-        <span class="content_weight-bold">Корзина пустая.</span> <br>Чтобы добавить в корзину
+      <div id="my-bag" class="bag__content">
+        <span class="bag__content-info">Корзина пустая.</span> <br>Чтобы добавить в корзину
         понравившийся товар, нажмите <br>
         «Добавить в корзину».
       </div>
       <div id="favorite" class="bag__content">
-        <span class="content_weight-bold">У вас еще нет сохраненных товаров!</span>
+        <span class="bag__content-info">У вас еще нет сохраненных товаров!</span>
         Проверьте, нет ли у вас товаров в корзине.
         Купите их, пока они не закончились!
       </div>
@@ -57,35 +60,35 @@
 
   <header class="main-header">
     <div class="logo">
-      <span class="material-icons"  onclick="openMobileMenu()">
+      <span class="material-icons" onclick="openMobileMenu()">
         menu
-        </span>
+      </span>
       <a href="index.html">
         <img src="./images/3_kombinacja_лого_черн.OULWl.png">
       </a>
     </div>
-    <section id="mobile-menu" class="main-header__mobile-menu">
+    <section class="main-header__mobile-menu" id="mobile-menu" >
       <a href="javascript:void(0)" class="btn-close" onclick="closeMobileMenu()">×</a>
       <nav class="mobile-menu_wrapper">
-            <ul class="mobile-menu-list">
-              <li><a href="javascript:void(0)" class="accordion">Одежда <span>+</span></a>
-                <ul class="mobile-submenu">
-                  <li><a href="clothes.html?type=t-shirt">Футболки/Лонгсливы</a></li>
-                  <li><a href="clothes.html?type=shirts">Рубашки</a></li>
-                  <li><a href="clothes.html?type=dress">Платья</a></li>
-                  <li><a href="clothes.html?type=costumes">Спортивные костюмы</a></li>
-                </ul>
-              </li>
-              <li ><a href="javascript:void(0)"class="accordion">Сумки<span>+</span></a>
-                <ul class="mobile-submenu">
-                  <li><a href="bags.html?type=shoppers">Шопперы</a></li>
-                  <li><a href="bags.html?type=waist_bags">Поясные</a></li>
-                </ul>
-              </li>
-              <li><a href="gift_card.html">Подарочная карта</a></li>
-              <li><a href="buyers.html">Покупателям</a></li>
-              <li><a href="about.html">О нас</a></li>
+        <ul class="mobile-menu-list">
+          <li><a href="javascript:void(0)" class="accordion">Одежда <span>+</span></a>
+            <ul class="mobile-submenu">
+              <li><a href="clothes.html?type=t-shirt">Футболки/Лонгсливы</a></li>
+              <li><a href="clothes.html?type=shirts">Рубашки</a></li>
+              <li><a href="clothes.html?type=dress">Платья</a></li>
+              <li><a href="clothes.html?type=costumes">Костюмы</a></li>
             </ul>
+          </li>
+          <li><a href="javascript:void(0)" class="accordion">Сумки<span>+</span></a>
+            <ul class="mobile-submenu">
+              <li><a href="bags.html?type=shoppers">Шопперы</a></li>
+              <li><a href="bags.html?type=waist_bags">Поясные</a></li>
+            </ul>
+          </li>
+          <li><a href="gift_card.html">Подарочная карта</a></li>
+          <li><a href="buyers.html">Покупателям</a></li>
+          <li><a href="about.html">О нас</a></li>
+        </ul>
       </nav>
     </section>
     <section class="main-header__menu">
@@ -96,7 +99,7 @@
               <li><a href="clothes.html?type=t-shirt">Футболки/Лонгсливы</a></li>
               <li><a href="clothes.html?type=shirts">Рубашки</a></li>
               <li><a href="clothes.html?type=dress">Платья</a></li>
-              <li><a href="clothes.html?type=costumes">Спортивные костюмы</a></li>
+              <li><a href="clothes.html?type=costumes">Костюмы</a></li>
             </ul>
             <div class="hidden-block__img-wrapper">
               <img src="./images/clothes.jpg">
@@ -118,7 +121,7 @@
             </div>
           </div>
         </li>
-        <li class="gift-card"><a href="gift_card.html">Подарочная карта</a></li>
+        <li class="gift-card"><a href="gift_card.html">Подарочный сертификат</a></li>
         <li class="buyers"><a href="buyers.html">Покупателям</a></li>
         <li class="about"><a href="about.html">О нас</a></li>
       </ul>
@@ -324,11 +327,11 @@
 
   </footer>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="skroll.js"></script>
-  <script src="shared.js"></script>
-  <script src="buyers.js"></script>
-  <script src="clothes.js"></script>
-  <script src="mobile-menu.js"></script>
+  <script src="./scripts/skroll.js"></script>
+  <script src="./scripts/shared.js"></script>
+  <script src="./scripts/buyers.js"></script>
+  <script src="./scripts/clothes.js"></script>
+  <script src="./scripts/mobile-menu.js"></script>
 </body>
 
 </html>
