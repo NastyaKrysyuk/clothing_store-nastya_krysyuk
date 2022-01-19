@@ -22,13 +22,16 @@
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "grey",
-  "screenshots": [{
+  "screenshots": [
+    {
       "src": "images/screenshots/screen1.jpg",
       "sizes": "1280x720",
       "type": "image/jpeg"
-  },{
+    },
+    {
       "src": "images/screenshots/screen2.jpg",
       "sizes": "1280x720",
       "type": "image/jpeg"
-  }]
+    }
+  ]
 }

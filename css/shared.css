@@ -58,7 +58,7 @@ input:focus {
   margin: 0.5em;
 }
 
-.menu-list li>a {
+.menu-list li > a {
   margin: 0 1rem;
   color: black;
   letter-spacing: 0.1rem;
@@ -78,7 +78,7 @@ input:focus {
   border-left: none;
 }
 
-.menu-list li:hover>a {
+.menu-list li:hover > a {
   font-weight: bold;
   text-decoration: underline;
 }
@@ -176,7 +176,7 @@ input:focus {
   margin: 0.7em;
 }
 
-.footer__contacts-list>* {
+.footer__contacts-list > * {
   display: inline-block;
   width: 32%;
 }
@@ -195,7 +195,7 @@ input:focus {
   z-index: 10;
 }
 
-.footer-wrapper>* {
+.footer-wrapper > * {
   flex: 1 100%;
   padding: 2em;
 }
@@ -268,7 +268,7 @@ input:focus {
   vertical-align: top;
 }
 
-.hidden-block__submenu>* {
+.hidden-block__submenu > * {
   margin: 0.5em;
   padding: 0.5em;
   border: none;
@@ -280,7 +280,7 @@ input:focus {
   width: 45%;
 }
 
-.hidden-block__img-wrapper>* {
+.hidden-block__img-wrapper > * {
   width: 32%;
 }
 
@@ -321,7 +321,7 @@ input:focus {
   right: 2rem;
 }
 
-.search-resalt{
+.search-resalt {
   position: relative;
   top: 25%;
   left: 25%;
@@ -329,12 +329,12 @@ input:focus {
 }
 
 .search-resalt__list a {
-color: white;
-text-transform: capitalize;
+  color: white;
+  text-transform: capitalize;
 }
 
 .search .header {
-  color: white; 
+  color: white;
 }
 
 /*____bag_block___*/
@@ -451,7 +451,7 @@ text-transform: capitalize;
     font-size: 0.7rem;
   }
 
-  .menu-list li>a {
+  .menu-list li > a {
     margin: 0 0.5rem;
   }
 
@@ -502,7 +502,7 @@ text-transform: capitalize;
 }
 
 @media screen and (max-width : 576px) {
-  .footer-wrapper > * {
+  .footer-wrapper>* {
     text-align: center;
   }
 
@@ -510,10 +510,8 @@ text-transform: capitalize;
     line-height: 2em;
   }
 
-  .footer__contacts-list>* {
+  .footer__contacts-list > * {
     display: block;
     width: 100%;
   }
 }
-
-

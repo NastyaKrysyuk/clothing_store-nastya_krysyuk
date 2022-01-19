@@ -1,8 +1,6 @@
-
 // определяем саму форму и поле ввода email и элемент span, 
 // в который поместим сообщение об ошибке
 const form = document.getElementsByTagName('form')[0];
-
 const email = document.getElementById('mail');
 const emailError = document.querySelector('#mail + span.error');
 
@@ -41,7 +39,6 @@ function showError() {
     // Если содержимое слишком короткое
     emailError.textContent = `Электронная почта должна содержать не менее  ${email.minLength} символов; вы ввели ${email.value.length}.`;
   }
-
   // Задаём соответствующую стилизацию
   emailError.className = 'error active-error';
 }

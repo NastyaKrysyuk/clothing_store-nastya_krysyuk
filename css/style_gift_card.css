@@ -1,7 +1,7 @@
 @import url(root_colors.css);
 
 :root {
-  --invalid-value:var(--transparent-red);
+  --invalid-value: var(--transparent-red);
 }
 
 .gift-card-wrapper {

@@ -13,19 +13,19 @@ main {
   text-align: center;
 }
 
-.buyers-wrapper>* {
+.buyers-wrapper > * {
   -webkit-box-flex: 1;
   -ms-flex: 1 100%;
   flex: 1 100%;
 }
 
-.buyers__info>* {
+.buyers__info > * {
   margin-bottom: 2em;
   border-bottom: 0.016em solid var(--transparent-gray);
   line-height: 1.5rem;
 }
 
-.buyers__image-container>* {
+.buyers__image-container > * {
   width: 100%;
   opacity: 0.8;
 }
