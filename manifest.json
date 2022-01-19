@@ -1,0 +1,34 @@
+{
+  "lang": "ru",
+  "dir": "ltr",
+  "name": "Бренд дизайнерской одежды KOMBINACJA",
+  "short_name": "KOMBINACJA",
+  "icons": [
+    {
+      "src": "favicon/favicon.webp",
+      "sizes": "48x48",
+      "type": "image/webp"
+    },
+    {
+      "src": "favicon/favicon.ico",
+      "sizes": "72x72 96x96 128x128 256x256"
+    },
+    {
+      "src": "favicon/favicon.svg",
+      "sizes": "72x72"
+    }
+  ],
+  "scope": "/clothing_store-nastya_krysyuk/",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "grey",
+  "screenshots": [{
+      "src": "images/screenshots/screen1.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+  },{
+      "src": "images/screenshots/screen2.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg"
+  }]
+}

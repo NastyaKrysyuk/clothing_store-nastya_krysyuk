@@ -17,6 +17,7 @@ body {
   background: url(../images/DSCF4626-2.JPG) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 a {

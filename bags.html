@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="KOMBINACJA">
   <meta property="og:site_name" content="kombinacja.by">
-  <meta property="og:url" content="index.html">
-  <meta property="og:description" content="Бренд дизайнерской одежды для людей в гармонии с собой и миром вокруг.">
+  <meta property="og:url" content="bags.html?type=shoppers">
+  <meta property="og:description" content="Каталог сумок KOMBINACJA.">
   <meta property="og:image" content="./images/for_open-graph.jpg">
+  <meta property="og:image:width" content="968">
+  <meta property="og:image:height" content="504">
   <title>KOMBINACJA</title>
   <link rel="shortcut icon" href="./favicon/favicon.ico">
   <link rel="stylesheet" href="./css/shared.css">
@@ -24,13 +27,20 @@
 </head>
 
 <body>
-  <div class="btn-toTop" id="toTop"></div>
-  <div id="search" class="search">
+  <div role="button" class="btn-toTop" id="toTop"></div>
+  <section role="search" id="search" class="search">
     <a role="button" href="javascript:void(0)" class="btn-close" onclick="closeSearch()">×</a>
       <input class="search__input" type="search" placeholder="Введите поисковой запрос">
-  </div>
-  <div id="bag" class="bag">
-    <a href="javascript:void(0)" class="btn-close" onclick="closeBag()">×</a>
+     <div class="search-resalt"><h3 class="header">Часто ищут:</h3>
+      <ul class="search-resalt__list">
+        <li><a href="clothes.html?type=t-shirt">Футболки/Лонгсливы</a></li>
+        <li><a href="clothes.html?type=shirts">Рубашки</a></li>
+        <li><a href="clothes.html?type=dress">Платья</a></li>
+        <li><a href="clothes.html?type=costumes">Костюмы</a></li>
+      </ul></div> 
+  </section>
+  <section id="bag" class="bag">
+    <a role="button" href="javascript:void(0)" class="btn-close" onclick="closeBag()">×</a>
     <div class="bag-wrapper">
       <ul>
         <li class="bag__tablinks" onclick="openContentBag(event, 'my-bag')">
@@ -57,22 +67,21 @@
         Купите их, пока они не закончились!
       </div>
     </div>
-  </div>
-
+  </section>
   <header class="main-header">
-    <div class="logo">
-      <span class="material-icons" onclick="openMobileMenu()">
+    <section role="banner" class="logo">
+      <span role="button" class="material-icons" onclick="openMobileMenu()">
         menu
       </span>
       <a href="index.html">
-        <img src="./images/3_kombinacja_лого_черн.OULWl.png">
+        <img src="./images/3_kombinacja_лого_черн.OULWl.png" alt="KOMBINACJA" title="KOMBINACJA">
       </a>
-    </div>
-    <section class="main-header__mobile-menu" id="mobile-menu" >
+    </section>
+    <section role="navigation" class="main-header__mobile-menu" id="mobile-menu" >
       <a href="javascript:void(0)" class="btn-close" onclick="closeMobileMenu()">×</a>
       <nav class="mobile-menu_wrapper">
-        <ul class="mobile-menu-list">
-          <li><a href="javascript:void(0)" class="accordion">Одежда <span>+</span></a>
+        <ul class="mobile-menu-list" role="tree">
+          <li><a href="javascript:void(0)" class="accordion" role="treeitem">Одежда <span>+</span></a>
             <ul class="mobile-submenu">
               <li><a href="clothes.html?type=t-shirt">Футболки/Лонгсливы</a></li>
               <li><a href="clothes.html?type=shirts">Рубашки</a></li>
@@ -80,21 +89,21 @@
               <li><a href="clothes.html?type=costumes">Костюмы</a></li>
             </ul>
           </li>
-          <li><a href="javascript:void(0)" class="accordion">Сумки<span>+</span></a>
+          <li><a href="javascript:void(0)" class="accordion"  role="treeitem">Сумки<span>+</span></a>
             <ul class="mobile-submenu">
               <li><a href="bags.html?type=shoppers">Шопперы</a></li>
               <li><a href="bags.html?type=waist_bags">Поясные</a></li>
             </ul>
           </li>
-          <li><a href="gift_card.html">Подарочная карта</a></li>
-          <li><a href="buyers.html">Покупателям</a></li>
-          <li><a href="about.html">О нас</a></li>
+          <li><a href="gift_card.html" target="_blank">Подарочная карта</a></li>
+          <li><a href="buyers.html" target="_blank">Покупателям</a></li>
+          <li><a href="about.html" target="_blank">О нас</a></li>
         </ul>
       </nav>
     </section>
-    <section class="main-header__menu">
-      <ul class="menu-list">
-        <li class="clothes menu-list__item"><a href="clothes.html?type=t-shirt">Одежда</a>
+    <section role="navigation" class="main-header__menu">
+      <ul class="menu-list" role="tree">
+        <li class="clothes menu-list__item"><a href="clothes.html?type=t-shirt" role="treeitem">Одежда</a>
           <div class="hidden-block">
             <ul class="hidden-block__submenu">
               <li><a href="clothes.html?type=t-shirt">Футболки/Лонгсливы</a></li>
@@ -103,28 +112,28 @@
               <li><a href="clothes.html?type=costumes">Костюмы</a></li>
             </ul>
             <div class="hidden-block__img-wrapper">
-              <img src="./images/clothes.jpg">
-              <img src="./images/clothes1.JPG">
-              <img src="./images/clothes2.jpg">
+              <img src="./images/clothes.jpg" alt="Футболка">
+              <img src="./images/clothes1.JPG" alt="Костюм">
+              <img src="./images/clothes2.jpg" alt="Костюм">
             </div>
           </div>
         </li>
-        <li class="bags menu-list__item"><a href="bags.html?type=shoppers">Сумки</a>
+        <li class="bags menu-list__item"><a href="bags.html?type=shoppers" role="treeitem">Сумки</a>
           <div class="hidden-block">
             <ul class="hidden-block__submenu">
               <li><a href="bags.html?type=shoppers">Шопперы</a></li>
               <li><a href="bags.html?type=waist_bags">Поясные</a></li>
             </ul>
             <div class="hidden-block__img-wrapper">
-              <img src="./images/bag.jpg">
-              <img src="./images/bag1.jpg">
-              <img src="./images/bag2.jpg">
-            </div>
+              <img src="./images/bag.jpg"  alt="Сумка">
+              <img src="./images/bag1.jpg" alt="Сумка">
+              <img src="./images/bag2.jpg" alt="Сумка">
+            </div> 
           </div>
         </li>
-        <li class="gift-card"><a href="gift_card.html">Подарочный сертификат</a></li>
-        <li class="buyers"><a href="buyers.html">Покупателям</a></li>
-        <li class="about"><a href="about.html">О нас</a></li>
+        <li class="gift-card"><a href="gift_card.html" target="_blank">Подарочный сертификат</a></li>
+        <li class="buyers"><a href="buyers.html" target="_blank">Покупателям</a></li>
+        <li class="about"><a href="about.html" target="_blank">О нас</a></li>
       </ul>
     </section>
 
@@ -145,7 +154,7 @@
       </div>
     </div>
   </header>
-  <main class="main_bags">
+  <main class="main_bags" role="main">
     <nav class="nav_left-block">
       <ul class="nav_left-block__list">
         <li class="nav_left-block__title">Сумки</li>
@@ -483,7 +492,7 @@
           каждый раз когда оставляете свои данные
           в любой форме обратной связи на сайте <a href="index.html">kombinacja.by</a> .
         </p>
-        <p>
+        <p role="contentinfo">
           Copyright © 2021, KOMBINACJA — Все права защищены.<br>
           Development & design —
           <a href="mailto:nkrysyuk@inbox.ru">nkrysyuk@inbox.ru</a>

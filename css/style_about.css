@@ -54,11 +54,6 @@
   top: 87%;
 }
 
-.img-container {
-  margin-left: 3em;
-  cursor: zoom-in;
-}
-
 .img_display_block {
   display: block;
   margin-bottom: 3em;
@@ -67,7 +62,7 @@
 /*gallary*/
 
 .gallery__title {
-  margin-right: 4rem;
+  margin: 4rem;
   color: var(--transparent-yellow);
   text-transform: uppercase;
   font-size: 9em;
@@ -92,12 +87,12 @@
 }
 
 .preview {
-  max-width: 360px;
+  max-width: 22.5rem;
   object-fit: cover;
 }
 
 .image_size {
-  height: 807px;
+  height: 50.6rem;
 }
 
 .image-container:after {
@@ -147,7 +142,6 @@
   display: block;
   z-index: 20;
 }
-
 
 /*overlay*/
 
@@ -228,6 +222,46 @@
   cursor: pointer;
 }
 
+/*__clients___*/
+
+.clients__image-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn-clients .material-icons {
+  font-size: 3rem;
+  color: aliceblue;
+}
+
+.clients {
+  width: 31%;
+  overflow: hidden;
+}
+
+.clients__image-container {
+display: flex;
+transform: translateX(0);
+transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  top: -21vw;
+}
+
+.btn-clients {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-clients:hover {
+  opacity: 0.9;
+}
+
 .social__background {
   height: 40rem;
   background: url(../images/DSCF4604__1.jpg) top center no-repeat;
@@ -272,11 +306,11 @@
   .concept__list-item,
   .gallery__title {
     font-size: 7em;
+    margin: auto;
   }
 
   .content__logo {
     left: 50%;
-
   }
 
   .content {
@@ -325,4 +359,10 @@
   .concept {
     display: none;
   }
+ 
+  .clients{
+    width: 100%;
+  }
 }
+
+

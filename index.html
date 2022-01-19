@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="KOMBINACJA">
   <meta property="og:site_name" content="kombinacja.by">
   <meta property="og:url" content="index.html">
   <meta property="og:description" content="Бренд дизайнерской одежды для людей в гармонии с собой и миром вокруг.">
   <meta property="og:image" content="./images/for_open-graph.jpg">
+  <meta property="og:image:width" content="968">
+  <meta property="og:image:height" content="504">
   <title>KOMBINACJA</title>
+  <link rel="manifest" href="manifest.json">
   <link rel="shortcut icon" href="./favicon/favicon.ico">
   <link rel="stylesheet" href="./css/style_index.css">
   <link rel="stylesheet" href="./css/shared.css">
@@ -21,8 +25,8 @@
     rel="stylesheet">
 </head>
 <body>
-  <div class="btn-toTop" id="toTop"></div>
-  <div id="search" class="search">
+  <div role="button" class="btn-toTop" id="toTop"></div>
+  <section role="search" id="search" class="search">
     <a role="button" href="javascript:void(0)" class="btn-close" onclick="closeSearch()">×</a>
       <input class="search__input" type="search" placeholder="Введите поисковой запрос">
      <div class="search-resalt"><h3 class="header">Часто ищут:</h3>
@@ -32,9 +36,9 @@
         <li><a href="clothes.html?type=dress">Платья</a></li>
         <li><a href="clothes.html?type=costumes">Костюмы</a></li>
       </ul></div> 
-  </div>
-  <div id="bag" class="bag">
-    <a href="javascript:void(0)" class="btn-close" onclick="closeBag()">×</a>
+  </section>
+  <section id="bag" class="bag">
+    <a role="button" href="javascript:void(0)" class="btn-close" onclick="closeBag()">×</a>
     <div class="bag-wrapper">
       <ul>
         <li class="bag__tablinks" onclick="openContentBag(event, 'my-bag')">
@@ -61,22 +65,21 @@
         Купите их, пока они не закончились!
       </div>
     </div>
-  </div>
-
+  </section>
   <header class="main-header">
-    <div class="logo">
-      <span class="material-icons" onclick="openMobileMenu()">
+    <section role="banner" class="logo">
+      <span role="button" class="material-icons" onclick="openMobileMenu()">
         menu
       </span>
       <a href="index.html">
-        <img src="./images/3_kombinacja_лого_черн.OULWl.png">
+        <img src="./images/3_kombinacja_лого_черн.OULWl.png" alt="KOMBINACJA" title="KOMBINACJA">
       </a>
-    </div>
-    <section class="main-header__mobile-menu" id="mobile-menu" >
+    </section>
+    <section role="navigation" class="main-header__mobile-menu" id="mobile-menu" >
       <a href="javascript:void(0)" class="btn-close" onclick="closeMobileMenu()">×</a>
       <nav class="mobile-menu_wrapper">
-        <ul class="mobile-menu-list">
-          <li><a href="javascript:void(0)" class="accordion">Одежда <span>+</span></a>
+        <ul class="mobile-menu-list" role="tree">
+          <li><a href="javascript:void(0)" class="accordion" role="treeitem">Одежда <span>+</span></a>
             <ul class="mobile-submenu">
               <li><a href="clothes.html?type=t-shirt">Футболки/Лонгсливы</a></li>
               <li><a href="clothes.html?type=shirts">Рубашки</a></li>
@@ -84,21 +87,21 @@
               <li><a href="clothes.html?type=costumes">Костюмы</a></li>
             </ul>
           </li>
-          <li><a href="javascript:void(0)" class="accordion">Сумки<span>+</span></a>
+          <li><a href="javascript:void(0)" class="accordion"  role="treeitem">Сумки<span>+</span></a>
             <ul class="mobile-submenu">
               <li><a href="bags.html?type=shoppers">Шопперы</a></li>
               <li><a href="bags.html?type=waist_bags">Поясные</a></li>
             </ul>
           </li>
-          <li><a href="gift_card.html">Подарочная карта</a></li>
-          <li><a href="buyers.html">Покупателям</a></li>
-          <li><a href="about.html">О нас</a></li>
+          <li><a href="gift_card.html" target="_blank">Подарочная карта</a></li>
+          <li><a href="buyers.html" target="_blank">Покупателям</a></li>
+          <li><a href="about.html" target="_blank">О нас</a></li>
         </ul>
       </nav>
     </section>
-    <section class="main-header__menu">
-      <ul class="menu-list">
-        <li class="clothes menu-list__item"><a href="clothes.html?type=t-shirt">Одежда</a>
+    <section role="navigation" class="main-header__menu">
+      <ul class="menu-list" role="tree">
+        <li class="clothes menu-list__item"><a href="clothes.html?type=t-shirt" role="treeitem">Одежда</a>
           <div class="hidden-block">
             <ul class="hidden-block__submenu">
               <li><a href="clothes.html?type=t-shirt">Футболки/Лонгсливы</a></li>
@@ -107,28 +110,28 @@
               <li><a href="clothes.html?type=costumes">Костюмы</a></li>
             </ul>
             <div class="hidden-block__img-wrapper">
-              <img src="./images/clothes.jpg">
-              <img src="./images/clothes1.JPG">
-              <img src="./images/clothes2.jpg">
+              <img src="./images/clothes.jpg" alt="Футболка">
+              <img src="./images/clothes1.JPG" alt="Костюм">
+              <img src="./images/clothes2.jpg" alt="Костюм">
             </div>
           </div>
         </li>
-        <li class="bags menu-list__item"><a href="bags.html?type=shoppers">Сумки</a>
+        <li class="bags menu-list__item"><a href="bags.html?type=shoppers" role="treeitem">Сумки</a>
           <div class="hidden-block">
             <ul class="hidden-block__submenu">
               <li><a href="bags.html?type=shoppers">Шопперы</a></li>
               <li><a href="bags.html?type=waist_bags">Поясные</a></li>
             </ul>
             <div class="hidden-block__img-wrapper">
-              <img src="./images/bag.jpg">
-              <img src="./images/bag1.jpg">
-              <img src="./images/bag2.jpg">
-            </div>
+              <img src="./images/bag.jpg"  alt="Сумка">
+              <img src="./images/bag1.jpg" alt="Сумка">
+              <img src="./images/bag2.jpg" alt="Сумка">
+            </div> 
           </div>
         </li>
-        <li class="gift-card"><a href="gift_card.html">Подарочный сертификат</a></li>
-        <li class="buyers"><a href="buyers.html">Покупателям</a></li>
-        <li class="about"><a href="about.html">О нас</a></li>
+        <li class="gift-card"><a href="gift_card.html" target="_blank">Подарочный сертификат</a></li>
+        <li class="buyers"><a href="buyers.html" target="_blank">Покупателям</a></li>
+        <li class="about"><a href="about.html" target="_blank">О нас</a></li>
       </ul>
     </section>
 
@@ -149,7 +152,7 @@
       </div>
     </div>
   </header>
-  <main class="main_index">
+  <main class="main_index" role="main">
     <section class="video-wrapper">
       <video autoplay muted loop class="main_index__video">
         <source src="./movies/IMG_0077 (1).mp4" type="video/mp4">
@@ -170,32 +173,32 @@
     <section class="img-wrapper">
       <article class="shirts">
         <p class="section-title">Рубашки</p>
-        <a href="clothes.html?type=shirts">
-          <img src="./images/img_index/bluza.jpg" alt="">
+        <a href="clothes.html?type=shirts" target="_blank">
+          <img src="./images/img_index/bluza.jpg" alt="Рубашки">
         </a>
       </article>
       <article class="bags">
         <p class="section-title">Сумки</p>
-        <a href="bags.html?type=shoppers">
-          <img src="./images/img_index/bag.jpg" alt="">
+        <a href="bags.html?type=shoppers" target="_blank">
+          <img src="./images/img_index/bag.jpg" alt="Сумки">
         </a>
       </article>
       <article class="costums">
         <p class="section-title">Костюмы/UNISEX</p>
-        <a href="clothes.html?type=costumes">
-          <img src="./images/img_index/sport_kostyum.JPG" alt="">
+        <a href="clothes.html?type=costumes" target="_blank">
+          <img src="./images/img_index/sport_kostyum.JPG" alt="Костюмы/UNISEX">
         </a>
       </article>
       <article class="dress">
         <p class="section-title">Платья</p>
-        <a href="clothes.html?type=dress">
-          <img src="./images/img_index/dress.jpg" alt="">
+        <a href="clothes.html?type=dress" target="_blank">
+          <img src="./images/img_index/dress.jpg" alt="Платья">
         </a>
       </article>
       <article class="t-shirts">
         <p class="section-title">Футболки</p>
-        <a href="clothes.html?type=t-shirt">
-          <img src="./images/img_index/futbolka.JPG" alt="">
+        <a href="clothes.html?type=t-shirt" target="_blank">
+          <img src="./images/img_index/futbolka.JPG" alt="Футболки">
         </a>
       </article>
     </section>
@@ -223,7 +226,6 @@
                 d="M 25 2 C 12.309534 2 2 12.309534 2 25 C 2 29.079097 3.1186875 32.88588 4.984375 36.208984 L 2.0371094 46.730469 A 1.0001 1.0001 0 0 0 3.2402344 47.970703 L 14.210938 45.251953 C 17.434629 46.972929 21.092591 48 25 48 C 37.690466 48 48 37.690466 48 25 C 48 12.309534 37.690466 2 25 2 z M 25 4 C 36.609534 4 46 13.390466 46 25 C 46 36.609534 36.609534 46 25 46 C 21.278025 46 17.792121 45.029635 14.761719 43.333984 A 1.0001 1.0001 0 0 0 14.033203 43.236328 L 4.4257812 45.617188 L 7.0019531 36.425781 A 1.0001 1.0001 0 0 0 6.9023438 35.646484 C 5.0606869 32.523592 4 28.890107 4 25 C 4 13.390466 13.390466 4 25 4 z M 16.642578 13 C 16.001539 13 15.086045 13.23849 14.333984 14.048828 C 13.882268 14.535548 12 16.369511 12 19.59375 C 12 22.955271 14.331391 25.855848 14.613281 26.228516 L 14.615234 26.228516 L 14.615234 26.230469 C 14.588494 26.195329 14.973031 26.752191 15.486328 27.419922 C 15.999626 28.087653 16.717405 28.96464 17.619141 29.914062 C 19.422612 31.812909 21.958282 34.007419 25.105469 35.349609 C 26.554789 35.966779 27.698179 36.339417 28.564453 36.611328 C 30.169845 37.115426 31.632073 37.038799 32.730469 36.876953 C 33.55263 36.755876 34.456878 36.361114 35.351562 35.794922 C 36.246248 35.22873 37.12309 34.524722 37.509766 33.455078 C 37.786772 32.688244 37.927591 31.979598 37.978516 31.396484 C 38.003976 31.104927 38.007211 30.847602 37.988281 30.609375 C 37.969311 30.371148 37.989581 30.188664 37.767578 29.824219 C 37.302009 29.059804 36.774753 29.039853 36.224609 28.767578 C 35.918939 28.616297 35.048661 28.191329 34.175781 27.775391 C 33.303883 27.35992 32.54892 26.991953 32.083984 26.826172 C 31.790239 26.720488 31.431556 26.568352 30.914062 26.626953 C 30.396569 26.685553 29.88546 27.058933 29.587891 27.5 C 29.305837 27.918069 28.170387 29.258349 27.824219 29.652344 C 27.819619 29.649544 27.849659 29.663383 27.712891 29.595703 C 27.284761 29.383815 26.761157 29.203652 25.986328 28.794922 C 25.2115 28.386192 24.242255 27.782635 23.181641 26.847656 L 23.181641 26.845703 C 21.603029 25.455949 20.497272 23.711106 20.148438 23.125 C 20.171937 23.09704 20.145643 23.130901 20.195312 23.082031 L 20.197266 23.080078 C 20.553781 22.728924 20.869739 22.309521 21.136719 22.001953 C 21.515257 21.565866 21.68231 21.181437 21.863281 20.822266 C 22.223954 20.10644 22.02313 19.318742 21.814453 18.904297 L 21.814453 18.902344 C 21.828863 18.931014 21.701572 18.650157 21.564453 18.326172 C 21.426943 18.001263 21.251663 17.580039 21.064453 17.130859 C 20.690033 16.232501 20.272027 15.224912 20.023438 14.634766 L 20.023438 14.632812 C 19.730591 13.937684 19.334395 13.436908 18.816406 13.195312 C 18.298417 12.953717 17.840778 13.022402 17.822266 13.021484 L 17.820312 13.021484 C 17.450668 13.004432 17.045038 13 16.642578 13 z M 16.642578 15 C 17.028118 15 17.408214 15.004701 17.726562 15.019531 C 18.054056 15.035851 18.033687 15.037192 17.970703 15.007812 C 17.906713 14.977972 17.993533 14.968282 18.179688 15.410156 C 18.423098 15.98801 18.84317 16.999249 19.21875 17.900391 C 19.40654 18.350961 19.582292 18.773816 19.722656 19.105469 C 19.863021 19.437122 19.939077 19.622295 20.027344 19.798828 L 20.027344 19.800781 L 20.029297 19.802734 C 20.115837 19.973483 20.108185 19.864164 20.078125 19.923828 C 19.867096 20.342656 19.838461 20.445493 19.625 20.691406 C 19.29998 21.065838 18.968453 21.483404 18.792969 21.65625 C 18.639439 21.80707 18.36242 22.042032 18.189453 22.501953 C 18.016221 22.962578 18.097073 23.59457 18.375 24.066406 C 18.745032 24.6946 19.964406 26.679307 21.859375 28.347656 C 23.05276 29.399678 24.164563 30.095933 25.052734 30.564453 C 25.940906 31.032973 26.664301 31.306607 26.826172 31.386719 C 27.210549 31.576953 27.630655 31.72467 28.119141 31.666016 C 28.607627 31.607366 29.02878 31.310979 29.296875 31.007812 L 29.298828 31.005859 C 29.655629 30.601347 30.715848 29.390728 31.224609 28.644531 C 31.246169 28.652131 31.239109 28.646231 31.408203 28.707031 L 31.408203 28.708984 L 31.410156 28.708984 C 31.487356 28.736474 32.454286 29.169267 33.316406 29.580078 C 34.178526 29.990889 35.053561 30.417875 35.337891 30.558594 C 35.748225 30.761674 35.942113 30.893881 35.992188 30.894531 C 35.995572 30.982516 35.998992 31.07786 35.986328 31.222656 C 35.951258 31.624292 35.8439 32.180225 35.628906 32.775391 C 35.523582 33.066746 34.975018 33.667661 34.283203 34.105469 C 33.591388 34.543277 32.749338 34.852514 32.4375 34.898438 C 31.499896 35.036591 30.386672 35.087027 29.164062 34.703125 C 28.316336 34.437036 27.259305 34.092596 25.890625 33.509766 C 23.114812 32.325956 20.755591 30.311513 19.070312 28.537109 C 18.227674 27.649908 17.552562 26.824019 17.072266 26.199219 C 16.592866 25.575584 16.383528 25.251054 16.208984 25.021484 L 16.207031 25.019531 C 15.897202 24.609805 14 21.970851 14 19.59375 C 14 17.077989 15.168497 16.091436 15.800781 15.410156 C 16.132721 15.052495 16.495617 15 16.642578 15 z">
               </path>
             </svg>
-
             <a href="https://api.whatsapp.com/send?phone=79858819304">
               +375 (33) 880-87-61
             </a>
@@ -258,7 +260,6 @@
             </ul>
           </li>
         </ul>
-
       </div>
       <div class="footer__consumer">
         <h3 class="header">Покупателям</h3>
@@ -288,7 +289,7 @@
           каждый раз когда оставляете свои данные
           в любой форме обратной связи на сайте <a href="index.html">kombinacja.by</a> .
         </p>
-        <p>
+        <p role="contentinfo">
           Copyright © 2021, KOMBINACJA — Все права защищены.<br>
           Development & design —
           <a href="mailto:nkrysyuk@inbox.ru">nkrysyuk@inbox.ru</a>
