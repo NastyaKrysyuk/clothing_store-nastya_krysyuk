@@ -38,6 +38,11 @@
   font-size: 1rem;
 }
 
+.gift-card__form > p {
+  margin: 0;
+  font-weight: bold;
+}
+
 .gift-card__form > *:focus {
   outline-style: none;
   background-color: var(--transparent-gray);
