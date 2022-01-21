@@ -1,7 +1,7 @@
 @import url(root_colors.css);
 
 :root{
-  --product-card-bg-color:var(--light-gray);
+  --product-card-bg-color:var(--light-white);
   --overlay-bg-color:var(--tin);
 }
 
